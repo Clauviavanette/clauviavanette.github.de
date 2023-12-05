@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clauvia Vanette Kamto - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #808080;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Clauvia Vanette Kamto</h1>
+        <p>Webentwickler | Tennis-Enthusiast | Reiseliebhaber</p>
+    </header>
+
+    <section>
+        <h2>Über mich</h2>
+        <p>Ich wurde in Kamerun geboren und bin zwischen Kamerun und Frankreich aufgewachsen. Die Zeit mit Familie und Freunden zu verbringen, liebe ich sehr. Seit meinem 8. Lebensjahr spiele ich Tennis und bin ziemlich gut darin 😊. Auch das Reisen und Entdecken begeistert mich sehr. Stay tuned and enjoy!</p>
+
+        <h2>Bildergalerie</h2>
+        <div class="gallery">
+            <img src="love.jpg" alt="Bild 1">
+            <img src="natur.jpg" alt="Bild 2">
+            <img src="vue.jpg" alt="Bild 3">
+            <!-- Füge weitere Bilder hinzu, wenn nötig -->
+        </div>
+
+        <h2>Portfolio</h2>
+        <!-- Füge hier Details zu deinen Projekten und Links hinzu -->
+
+        <h2>Kontakt</h2>
+        <p>Email: deine@email.com<br>
+           LinkedIn: linkedin.com/deinprofil<br>
+           GitHub: github.com/deinbenutzername</p>
+    </section>
+
+</body>
+</html>
