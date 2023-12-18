@@ -7,10 +7,18 @@
     <style> 
         
 .header-section {
-    background-image: url('path/to/logo.jpg'); /* Pfad zum Logo-Bild */
-    background-size: cover;
-    background-position: center;
-    color: #fff; /* Textfarbe anpassen, damit sie auf dem Hintergrund gut lesbar ist */
+    background: url('logo.jpg') center/cover no-repeat fixed; /* Logo als Hintergrund für die gesamte Seite */
+            color: #fff; /* Textfarbe auf weiß ändern, um zum Logo zu passen */
+            padding-top: 100px; /* Platz für den Header hinzufügen */
+        }
+
+        .header-section {
+            background: transparent; /* Transparenter Hintergrund für den Header */
+            position: fixed; /* Header fixieren, damit er beim Scrollen sichtbar bleibt */
+            width: 100%; /* Volle Breite für den Header */
+            top: 0; /* Oben fixieren */
+            z-index: 1000; /* Z-Index festlegen, um über dem Inhalt zu erscheinen */
+
 }
 
 /* Weitere vorhandene Stile bleiben unverändert */
