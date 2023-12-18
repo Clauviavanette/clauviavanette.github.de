@@ -1,34 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
-    <style> 
-        
-.header-section {
-    background: url('logo.jpg') center/cover no-repeat fixed; /* Logo als Hintergrund für die gesamte Seite */
-            color: #fff; /* Textfarbe auf rot ändern, um zum Logo zu passen */
-            padding-top: 30px; /* Platz für den Header hinzufügen */
-        }
-
-        .header-section {
-            background: blaue; /* blauer Hintergrund für den Header */
-            position: fixed; /* Header fixieren, damit er beim Scrollen sichtbar bleibt */
-            width: 100%; /* Volle Breite für den Header */
-            top: 50; /* in der mitte fixieren */
-            z-index: 1000; /* Z-Index festlegen, um über dem Inhalt zu erscheinen */
-
-}
-
-/* Weitere vorhandene Stile bleiben unverändert */
-        
+    <style>
+        /* Andere vorhandene Stile bleiben unverändert */
 
         /* Zusätzliche Stile für den Lebenslaufbereich */
         h3 {
-            color: #FF0000;
-            margin-top: 50px;
-            font-size: 2.5em;
+            color: #FF4500;
+            margin-top: 30px;
+            font-size: 1.5em;
             text-transform: uppercase;
         }
 
@@ -38,72 +22,101 @@
             max-width: 150px; /* Maximale Breite der Bilder auf 150px begrenzen */
             margin-bottom: 10px; /* Abstand zwischen den Bildern verringern */
         }
+
+        /* Neue Stile für die verbesserte Struktur */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header, footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: #FF4500;
+            text-decoration: none;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .hero-text, .hero-info {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header section start -->
-    <header class="header-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="site-logo">
-                        <h2><a href="#">Clauvia Vanette Kamto</a></h2>
-                        <p>Enhance your online presence</p>
-                    </div>
-                </div>
-                <div class="col-md-8 text-md-right header-buttons">
-                    <a href="#" class="site-btn">Download CV</a>
-                    <a href="#" class="site-btn">Discover me</a>
-                </div>
+    <header>
+        <div class="container">
+            <div>
+                <h2><a href="#">Clauvia Vanette Kamto</a></h2>
+                <p>Enhance your online presence</p>
+            </div>
+            <div>
+                <a href="#" class="site-btn">Download CV</a>
+                <a href="#" class="site-btn">Discover me</a>
             </div>
         </div>
     </header>
     <!-- Header section end -->
 
     <!-- Hero section start -->
-    <section class="hero-section spad">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero-text">
-                                <h2>Clauvia Vanette Kamto</h2>
-                                <p>Enhance your online presence</p>
-                            </div>
-                            <div class="hero-info">
-                                <h2>General Info</h2>
-                                <ul>
-                                    <li><span>Date of Birth</span> october 02, 1996 </li>
-                                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
-                                    <li><span>Email</span>vanettekamto@gmail.com</li>
-                                    <!-- Add other details as needed -->
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="hero-image">
-                                <img src="vanou.jpg" alt="Vanou Bild">
-                            </figure>
-                            <figure class="hero-image">
-                                <img src="tennis.jpg" alt="Tennis Bild">
-                            </figure>
-                            <figure class="hero-image">
-                                <img src="natur.jpg" alt="Natur Bild">
-                            </figure>
-                            <figure class="hero-image">
-                                <img src="vue.jpg" alt="Vue Bild">
-                            </figure>
-                            <figure class="hero-image">
-                                <img src="voyage.jpg" alt="Voyage Bild">
-                            </figure>
-                            <figure class="hero-image">
-                                <img src="love.jpg" alt="Love Bild">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Clauvia Vanette Kamto</h2>
+                <p>Enhance your online presence</p>
+            </div>
+            <div class="hero-info">
+                <h2>General Info</h2>
+                <ul>
+                    <li><span>Date of Birth</span>october 02, 1996</li>
+                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
+                    <li><span>Email</span>vanettekamto@gmail.com</li>
+                    <!-- Add other details as needed -->
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="vanou.jpg" alt="Vanou Bild">
+                <img src="tennis.jpg" alt="Tennis Bild">
+                <img src="natur.jpg" alt="Natur Bild">
+                <img src="vue.jpg" alt="Vue Bild">
+                <img src="voyage.jpg" alt="Voyage Bild">
+                <img src="love.jpg" alt="Love Bild">
             </div>
         </div>
     </section>
@@ -111,61 +124,16 @@
 
     <!-- Lebenslauf section start -->
     <section>
-        <h2>Lebenslauf</h2>
-        <p>
-            <strong>Bildung:</strong><br>
-            2014: Abitur, College Fleming<br>
-            09.2015 - 08.2018: Bachelor in Moderne Literatur, Universität Sorbonne, Frankreich<br>
-            09.2019 - 02.2023: Information Management, Hochschule Kaiserslautern<br>
-            01.03.2023 - heute: Digital Media Marketing, Hochschule Kaiserslautern
-        </p>
-
-        <p>
-            <strong>Erfahrungen:</strong><br>
-            09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
-        </p>
-
-        <p>
-            <strong>Adresse:</strong><br>
-            Virginiastr 17, 66482 Zweibrücken<br>
-            Horrheimerstr 5, 70437 Stuttgart
-        </p>
-
-        <p>
-            <strong>Email:</strong> vanettekamto@gmail.com
-        </p>
-
-        <p>
-            <strong>Kenntnisse:</strong><br>
-            IT<br>
-            <strong>Fremdsprachen:</strong> Französisch, Deutsch, Englisch, Spanisch
-        </p>
-
-        <p>
-            <strong>Hobbys:</strong><br>
-            Tennis spielen, Reisen, Tanzen, Lesen, Musik
-        </p>
-    </section>
-    <!-- Lebenslauf section end -->
-
-    <!-- Your existing HTML content remains unchanged -->
-
-    <!-- Footer section start -->
-    <footer class="footer-section">
-        <div class="container text-center">
-            <div class="copyright">
-                <!-- Copyright-Text hier anpassen -->
-            </div>
-        </div>
-    </footer>
-    <!-- Footer section end -->
-
-    <!--====== Javascripts & Jquery ======-->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+        <div class="container">
+            <h2>Lebenslauf</h2>
+            <p>
+                <strong>Bildung:</strong><br>
+                2014: Abitur, College Fleming<br>
+                09.2015 - 08.2018: Bachelor in Moderne Literatur, Universität Sorbonne, Frankreich<br>
+                09.2019 - 02.2023: Information Management, Hochschule Kaiserslautern<br>
+                01.03.2023 - heute: Digital Media Marketing, Hochschule Kaiserslautern
+            </p>
+            <p>
+                <strong>Erfahrungen:</strong><br>
+                09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+            </p>
