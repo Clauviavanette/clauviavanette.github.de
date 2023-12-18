@@ -1,74 +1,168 @@
-/* styles.css */
 
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-.logo {
-    max-width: 150px;
-    margin: 10px;
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-p {
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Styling for the "About Me" section */
-section:nth-of-type(odd) {
-    background-color: #fff;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Additional styles for the "Lebenslauf" section */
-section:nth-of-type(even) {
-    background-color: #f9f9f9;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Additional chic styling */
-h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
-}
-
-h2 {
-    font-size: 1.5em;
-    color: #333;
-}
-
-h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-top: 20px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* Adjust as needed */
     
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clauvia Vanette Kamto - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Good Vibes', cursive;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #3E4095;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5em;
+            color: #3E4095;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .hero-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .hero-info li {
+            margin-bottom: 10px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #3E4095;
+            font-size: 1.8em;
+        }
+
+        section p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #3E4095;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section start -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="site-logo">
+                        <h2><a href="#">Clauvia Vanette Kamto</a></h2>
+                        <p>Enhance your online presence</p>
+                    </div>
+                </div>
+                <div class="col-md-8 text-md-right header-buttons">
+                    <a href="#" class="site-btn">Download CV</a>
+                    <a href="#" class="site-btn">Discover me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Hero section start -->
+    <section class="hero-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero-text">
+                                <h2>Clauvia Vanette Kamto</h2>
+                                <p>Enhance your online presence</p>
+                            </div>
+                            <div class="hero-info">
+                                <h2>General Info</h2>
+                                <ul>
+                                    <li><span>Date of Birth</span>Aug 25, 1988</li>
+                                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
+                                    <li><span>Email</span>vanettekamto@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <figure class="hero-image">
+                                <!-- Add your image source here -->
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- Lebenslauf section start -->
+    <section>
+        <h2>Lebenslauf</h2>
+        <p>
+            <strong>Bildung:</strong><br>
+            2014: Abitur, College Fleming<br>
+            09.2015 - 08.2018: Bachelor in Moderne Literatur, Universität Sorbonne, Frankreich<br>
+            09.2019 - 02.2023: Information Management, Hochschule Kaiserslautern<br>
+            01.03.2023 - heute: Digital Media Marketing, Hochschule Kaiserslautern
+        </p>
+
+        <p>
+            <strong>Erfahrungen:</strong><br>
+            09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+        </p>
+
+        <p>
+            <strong>Adresse:</strong><br>
+            Virginiastr 17, 66482 Zweibrücken<br>
+            Horrheimerstr 5, 70437 Stuttgart
+        </p>
+
+        <p>
+            <strong>Email:</strong
