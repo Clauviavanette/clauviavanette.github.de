@@ -1,11 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
-    <style>
+    <style> 
+        
+.header-section {
+    background-image: url('path/to/logo.jpg'); /* Pfad zum Logo-Bild */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Textfarbe anpassen, damit sie auf dem Hintergrund gut lesbar ist */
+}
+
+/* Weitere vorhandene Stile bleiben unverändert */
         /* Andere vorhandene Stile bleiben unverändert */
 
         /* Zusätzliche Stile für den Lebenslaufbereich */
@@ -16,39 +24,11 @@
             text-transform: uppercase;
         }
 
-        body {
-            background: url('logo.jpg') center/cover no-repeat fixed; /* Logo als Hintergrund für die gesamte Seite */
-            color: #fff; /* Textfarbe auf weiß ändern, um zum Logo zu passen */
-            padding-top: 100px; /* Platz für den Header hinzufügen */
-            margin: 0; /* Standardmäßige Ränder entfernen */
-        }
-
-        .header-section {
-            background: transparent; /* Transparenter Hintergrund für den Header */
-            position: fixed; /* Header fixieren, damit er beim Scrollen sichtbar bleibt */
-            width: 100%; /* Volle Breite für den Header */
-            top: 0; /* Oben fixieren */
-            z-index: 1000; /* Z-Index festlegen, um über dem Inhalt zu erscheinen */
-        }
-
-        .site-logo h2 {
-            color: #fff; /* Logo-Textfarbe auf weiß ändern */
-        }
-
-        .hero-section {
-            padding: 100px 0; /* Anpassung des Paddings für den Inhalt */
-            text-align: center;
-        }
-
-        .hero-text {
-            margin-bottom: 30px; /* Abstand zwischen Text und Bild erhöhen */
-        }
-
         /* Anpassungen für die Bildgröße und den Abstand */
         .hero-image img {
             width: 100%; /* Bilder nehmen 100% der verfügbaren Breite ein */
             max-width: 150px; /* Maximale Breite der Bilder auf 150px begrenzen */
-            margin: 0 auto 10px; /* Zentrieren und Abstand hinzufügen */
+            margin-bottom: 10px; /* Abstand zwischen den Bildern verringern */
         }
     </style>
 </head>
@@ -65,17 +45,16 @@
                     </div>
                 </div>
                 <div class="col-md-8 text-md-right header-buttons">
-                    <a href="#home" class="site-btn">Home</a>
-                    <a href="#about-me" class="site-btn">About Me</a>
-                    <a href="#lebenslauf" class="site-btn">Lebenslauf</a>
+                    <a href="#" class="site-btn">Download CV</a>
+                    <a href="#" class="site-btn">Discover me</a>
                 </div>
             </div>
         </div>
     </header>
     <!-- Header section end -->
 
-    <!-- Home section start -->
-    <section id="home" class="hero-section">
+    <!-- Hero section start -->
+    <section class="hero-section spad">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -85,29 +64,78 @@
                                 <h2>Clauvia Vanette Kamto</h2>
                                 <p>Enhance your online presence</p>
                             </div>
+                            <div class="hero-info">
+                                <h2>General Info</h2>
+                                <ul>
+                                    <li><span>Date of Birth</span>october 02, 1996</li>
+                                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
+                                    <li><span>Email</span>vanettekamto@gmail.com</li>
+                                    <!-- Add other details as needed -->
+                                </ul>
+                            </div>
                         </div>
-                        <!-- Kein Bild hier für den Logo-Bereich -->
+                        <div class="col-lg-6">
+                            <figure class="hero-image">
+                                <img src="vanou.jpg" alt="Vanou Bild">
+                            </figure>
+                            <figure class="hero-image">
+                                <img src="tennis.jpg" alt="Tennis Bild">
+                            </figure>
+                            <figure class="hero-image">
+                                <img src="natur.jpg" alt="Natur Bild">
+                            </figure>
+                            <figure class="hero-image">
+                                <img src="vue.jpg" alt="Vue Bild">
+                            </figure>
+                            <figure class="hero-image">
+                                <img src="voyage.jpg" alt="Voyage Bild">
+                            </figure>
+                            <figure class="hero-image">
+                                <img src="love.jpg" alt="Love Bild">
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Home section end -->
-
-    <!-- About Me section start -->
-    <section id="about-me" class="spad">
-        <!-- Hier kannst du den Inhalt für den "About Me" Bereich hinzufügen -->
-        <h2>About Me</h2>
-        <p>Insert your about me content here.</p>
-    </section>
-    <!-- About Me section end -->
+    <!-- Hero section end -->
 
     <!-- Lebenslauf section start -->
-    <section id="lebenslauf">
-        <!-- Hier kannst du den Inhalt für den "Lebenslauf" Bereich hinzufügen -->
+    <section>
         <h2>Lebenslauf</h2>
         <p>
-            <!-- ... (Rest deines Lebenslauf-Codes) ... -->
+            <strong>Bildung:</strong><br>
+            2014: Abitur, College Fleming<br>
+            09.2015 - 08.2018: Bachelor in Moderne Literatur, Universität Sorbonne, Frankreich<br>
+            09.2019 - 02.2023: Information Management, Hochschule Kaiserslautern<br>
+            01.03.2023 - heute: Digital Media Marketing, Hochschule Kaiserslautern
+        </p>
+
+        <p>
+            <strong>Erfahrungen:</strong><br>
+            09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+        </p>
+
+        <p>
+            <strong>Adresse:</strong><br>
+            Virginiastr 17, 66482 Zweibrücken<br>
+            Horrheimerstr 5, 70437 Stuttgart
+        </p>
+
+        <p>
+            <strong>Email:</strong> vanettekamto@gmail.com
+        </p>
+
+        <p>
+            <strong>Kenntnisse:</strong><br>
+            IT<br>
+            <strong>Fremdsprachen:</strong> Französisch, Deutsch, Englisch, Spanisch
+        </p>
+
+        <p>
+            <strong>Hobbys:</strong><br>
+            Tennis spielen, Reisen, Tanzen, Lesen, Musik
         </p>
     </section>
     <!-- Lebenslauf section end -->
