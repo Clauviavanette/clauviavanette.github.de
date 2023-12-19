@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
+
+    <!-- Link zur Font Awesome-Bibliothek für Symbole -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         /* Andere vorhandene Stile bleiben unverändert */
 
@@ -75,6 +79,32 @@
         footer {
             margin-top: 20px;
         }
+
+        /* Stile für Symbole neben den Abschnittstiteln */
+        section h2::before {
+            font-family: 'Font Awesome 5 Free';
+            margin-right: 10px;
+        }
+
+        .fa-home::before {
+            content: '\f015';
+        }
+
+        .fa-user::before {
+            content: '\f007';
+        }
+
+        .fa-briefcase::before {
+            content: '\f0b1';
+        }
+
+        .fa-images::before {
+            content: '\f03e';
+        }
+
+        .fa-envelope::before {
+            content: '\f0e0';
+        }
     </style>
 </head>
 <body>
@@ -83,7 +113,7 @@
     <header>
         <div class="container">
             <div>
-                <h2><a href="#">Clauvia Vanette Kamto</a></h2>
+                <h2><a href="#"><i class="fas fa-home"></i> Clauvia Vanette Kamto</a></h2>
                 <p>Enhance your online presence</p>
             </div>
             <div>
@@ -99,7 +129,7 @@
         <div class="container">
             <div class="hero-text">
                 <h2>Clauvia Vanette Kamto</h2>
-                <p>Enhance your online presence</p>
+                <p>Erfahren mehr über mich</p>
             </div>
             <div class="hero-info">
                 <h2>General Info</h2>
@@ -124,16 +154,16 @@
 
     <!-- About Me section start -->
     <section>
-        <h2>About Me</h2>
+        <h2><i class="fas fa-user"></i> About Me</h2>
         <p>
-            I was born in Cameroon and raised in France. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed libero quis sem bibendum fermentum.
+           Ich bin in Kamerun und zwischen Kamerun und Frankreich aufgewachsen . Seit ich kind bin hat mir immer webseiteentwicklung faziniert . 
         </p>
     </section>
     <!-- About Me section end -->
 
     <!-- Experience section start -->
     <section>
-        <h2>Experience</h2>
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
         <p>
             <strong>Education:</strong><br>
             2014: High School Diploma, College Fleming<br>
@@ -166,26 +196,4 @@
 
     <!-- Contact section start -->
     <section class="contact-info">
-        <h2>Contact Information</h2>
-        <p>
-            <strong>Email:</strong> vanettekamto@gmail.com<br>
-            <strong>Phone:</strong> +49 1778056395<br>
-            <strong>Location:</strong> Stuttgart, Germany
-        </p>
-    </section>
-    <!-- Contact section end -->
-
-    <!-- ... (Bisheriger Code bleibt unverändert) -->
-
-    <!-- Footer section start -->
-    <footer>
-        <div class="container text-center">
-            <div class="copyright">
-                <!-- Copyright-Text hier anpassen -->
-            </div>
-        </div>
-    </footer>
-    <!-- Footer section end -->
-
-</body>
-</html>
+        <h2><i class="fas fa-envelope"></i> Contact Information</h
