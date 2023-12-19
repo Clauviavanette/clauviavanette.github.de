@@ -16,6 +16,8 @@
             color: #333;
             margin: 0;
             padding: 0;
+
+            
         }
 
         .container {
@@ -66,7 +68,7 @@
             padding: 10px 0;
         }
 
-       .portfolio-images {
+      .portfolio-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -74,11 +76,32 @@
 }
 
 .portfolio-images img {
-    width: 120px; /* Ändere die Breite nach Bedarf */
+    width: 200px; /* Ändere die Breite nach Bedarf */
     height: auto;
-    margin-bottom: 20px;
+    margin: 10px; /* Hinzugefügt für Abstand zwischen den Bildern */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* Education section styles */
+.education {
+    padding: 40px 0;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Linie zwischen den Bildungsabschnitten */
+    padding-bottom: 20px;
+}
+
+.education-item h3 {
+    color: #333;
+}
+
+.education-item p {
+    color: #777;
+    margin: 5px 0;
+}
+
 }
         .section-title {
             color: #FF4500;
@@ -158,23 +181,20 @@
     <!-- About Me section end -->
     
     
-    <!-- Education section start -->
-    <section>
-        <div class="container">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <p>
-                <strong>Education:</strong><br>
-                2014: High School Diploma, College Fleming<br>
-                
-                09.2015 - 08.2018: Bachelor's in Modern Literature, Sorbonne University, France<br>
-                
-                09.2019 - 02.2023: Information Management, Kaiserslautern University<br>
-                
-                01.03.2023 - Present: Digital Media Marketing, Kaiserslautern University
-            </p>
+  <!-- Education section start -->
+<section class="education">
+    <div class="container">
+        <h2 class="section-title">Ausbildung</h2>
+        <div class="education-item">
+            <h3>Dein Studiengang</h3>
+            <p>Studiendauer: 09.201X - 06.201X</p>
+            <p>Universität: Musteruniversität</p>
+            <p>Abschluss: Bachelor of Science</p>
         </div>
-    </section>
-    <!-- Education section end -->
+        <!-- Füge weitere Ausbildungseinträge hinzu, falls benötigt -->
+    </div>
+</section>
+<!-- Education section end -->
 
 
     <!-- Experience section start -->
