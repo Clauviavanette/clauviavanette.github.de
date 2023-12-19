@@ -1,4 +1,5 @@
                                                                                                                                                                                                                                                                                                                                   
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -11,21 +12,6 @@
 
     <style>
         /* Andere vorhandene Stile bleiben unverändert */
-
-        /* Zusätzliche Stile für den Lebenslaufbereich */
-        h3 {
-            color: #FF4500;
-            margin-top: 30px;
-            font-size: 1.5em;
-            text-transform: uppercase;
-        }
-
-        /* Anpassungen für die Bildgröße und den Abstand */
-        .hero-image img {
-            width: 100%; /* Bilder nehmen 100% der verfügbaren Breite ein */
-            max-width: 150px; /* Maximale Breite der Bilder auf 150px begrenzen */
-            margin-bottom: 10px; /* Abstand zwischen den Bildern verringern */
-        }
 
         /* Neue Stile für die verbesserte Struktur */
         body {
@@ -55,29 +41,25 @@
             text-decoration: none;
         }
 
-        .hero-section {
+        .profile-section {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 40px 0;
         }
 
-        .hero-text, .hero-info {
+        .profile-info {
             flex: 1;
             padding: 0 20px;
         }
 
-        .hero-image {
+        .profile-image {
             flex: 1;
             text-align: center;
         }
 
         section {
             padding: 40px 0;
-        }
-
-        footer {
-            margin-top: 20px;
         }
 
         /* Stile für Symbole neben den Abschnittstiteln */
@@ -124,64 +106,63 @@
     </header>
     <!-- Header section end -->
 
-    <!-- Hero section start -->
-    <section class="hero-section">
+    <!-- Profile section start -->
+    <section class="profile-section">
         <div class="container">
-            <div class="hero-text">
+            <div class="profile-info">
                 <h2>Clauvia Vanette Kamto</h2>
                 <p>Erfahren mehr über mich</p>
             </div>
-            <div class="hero-info">
-                <h2>General Info</h2>
-                <ul>
-                    <li><span>Date of Birth</span>october 02, 1996</li>
-                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
-                    <li><span>Email</span>vanettekamto@gmail.com</li>
-                    <!-- Add other details as needed -->
-                </ul>
-            </div>
-            <div class="hero-image">
-                <img src="vanou.jpg" alt="Vanou Bild">                                                                                                                                                                                                                                                                  
-                <img src="tennis.jpg" alt="Tennis Bild">
-                <img src="natur.jpg" alt="Natur Bild">
-                <img src="vue.jpg" alt="Vue Bild">
-                <img src="voyage.jpg" alt="Voyage Bild">
-                <img src="love.jpg" alt="Love Bild">
+            <div class="profile-image">
+                <img src="vanou.jpg" alt="Vanou Bild">  
+              <img src="logo.jpg" alt="logo Bild">
             </div>
         </div>
     </section>
-    <!-- Hero section end -->
+    <!-- Profile section end -->
 
     <!-- About Me section start -->
     <section>
-        <h2><i class="fas fa-user"></i> About Me</h2>
-        <p>
-           Ich bin in Kamerun und zwischen Kamerun und Frankreich aufgewachsen . Seit ich kind bin hat mir immer webseiteentwicklung faziniert . 
-        </p>
+        <div class="container">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>
+                I bin in Kamerun geberon und zwischen Kamerun und Frankreich aufgewachsen.
+            </p>
+        </div>
     </section>
     <!-- About Me section end -->
 
+    <!-- Education section start -->
+    <section>
+        <div class="container">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <p>
+                <strong>Education:</strong><br>
+                2014: High School Diploma, College Fleming<br>
+                09.2015 - 08.2018: Bachelor's in Modern Literature, Sorbonne University, France<br>
+                09.2019 - 02.2023: Information Management, Kaiserslautern University<br>
+                01.03.2023 - Present: Digital Media Marketing, Kaiserslautern University
+            </p>
+        </div>
+    </section>
+    <!-- Education section end -->
+
     <!-- Experience section start -->
     <section>
-        <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <p>
-            <strong>Education:</strong><br>
-            2014: High School Diploma, College Fleming<br>
-            09.2015 - 08.2018: Bachelor's in Modern Literature, Sorbonne University, France<br>
-            09.2019 - 02.2023: Information Management, Kaiserslautern University<br>
-            01.03.2023 - Present: Digital Media Marketing, Kaiserslautern University
-        </p>
-
-        <p>
-            <strong>Work Experience:</strong><br>
-            09.2015 - 09.2018: Strategic Marketing Officer, Nike
-        </p>
+        <div class="container">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <p>
+                <strong>Work Experience:</strong><br>
+                09.2015 - 09.2018: Strategic Marketing Officer, Nike
+            </p>
+        </div>
     </section>
     <!-- Experience section end -->
 
     <!-- Portfolio section start -->
     <section class="hero-section">
         <div class="container">
+            <h2><i class="fas fa-images"></i> Portfolio</h2>
             <div class="hero-image">
                 <img src="vanou.jpg" alt="Vanou Bild">                                                                                                                                                                                                                                                                  
                 <img src="tennis.jpg" alt="Tennis Bild">
@@ -196,4 +177,16 @@
 
     <!-- Contact section start -->
     <section class="contact-info">
-        <h2><i class="fas fa-envelope"></i> Contact Information</h
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact Information</h2>
+            <p>
+                <strong>Email:</strong> vanettekamto@gmail.com<br>
+                <strong>Phone:</strong> +49 1778056395<br>
+                <strong>Location:</strong> Stuttgart, Germany
+            </p>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+</body>
+</html>
