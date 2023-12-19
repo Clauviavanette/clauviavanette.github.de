@@ -41,17 +41,7 @@
             text-decoration: none;
         }
 
-        .profile-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0;
-            background: #3498db;
-            color: #fff;
-        }
-
-        .profile-info, .about-me, .education, .experience, .portfolio, .contact-info {
+        .profile-section, .experience, .portfolio, .contact-info {
             flex: 1;
             padding: 20px;
             margin: 10px;
@@ -59,6 +49,13 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-section, .experience, .portfolio, .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .profile-image img {
@@ -145,9 +142,23 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
         }
+
+        /* Verbesserte Stile für das Logo */
+        .logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <i class="fas fa-code"></i> ClauviaVK
+    </div>
 
     <!-- Header section start -->
     <header>
@@ -169,7 +180,7 @@
         <div class="container">
             <div class="profile-info">
                 <h2>Clauvia Vanette Kamto</h2>
-                <p>Stärke deine Online-Präsenz</p>
+                <p>Mehr über mich erfahren</p>
             </div>
             <div class="profile-image">
                 <img src="vanou.jpg" alt="Vanou Bild">                                                                                                                                                                                                                                                                  
@@ -183,7 +194,7 @@
         <div class="container">
             <h2><i class="fas fa-user"></i> Über mich</h2>
             <p>
-                Ich wurde in Kamerun geboren und wuchs zwischen Kamerun un   Frankreich auf. Tennis spiele ich seit ich 8 jahre alt bin und bin seit ich kind für Webentwicklung un Designe fasziniert.
+                Ich wurde in Kamerun geboren und wuchs zwischen Kamerun und  Frankreich auf. Tennis spiele ich seit ich 8 jahre alt bin un wurde immer von Webentwicklung und Designe fasziniert .
             </p>
         </div>
     </section>
@@ -197,9 +208,7 @@
                 <strong>Bildung:</strong><br>
                 2014: Abitur, College Fleming<br>
                 09.2015 - 08.2018: Bachelor in Moderner Literatur, Universität Sorbonne, Frankreich<br>
-                09.2019 - 02.2023: Informationsmanagement, Hochschule Kaiserslautern<br>
-                01.03.2023 - heute: Digitales Medienmarketing, Hochschule Kaiserslautern
-            </p>
+                09.2019 - 02.2023: Informationsmanagement, Hochschule Kaiserslautern<br> </p>
         </div>
     </section>
     <!-- Education section end -->
@@ -207,3 +216,50 @@
     <!-- Experience section start -->
     <section class="experience">
         <div class="container">
+            <h2><i class="fas fa-briefcase"></i> Erfahrung</h2>
+            <p>
+                <strong>Berufserfahrung:</strong><br>
+                09.2015 - 09.2018: Strategische Marketingbeauftragte, Nike
+                <!-- 10.2019-08.2021  Kundenservice in der Logistik bei Ikea -->
+            </p>
+        </div>
+    </section>
+    <!-- Experience section end -->
+
+    <!-- Portfolio section start -->
+    <section class="portfolio">
+        <div class="container">
+            <h2><i class="fas fa-images"></i> Portfolio</h2>
+            <div class="hero-image">
+                <img src="vanou.jpg" alt="Vanou Bild">
+                <!-- Fügen Sie weitere Bilder mit derselben Struktur hinzu -->
+                <img src="tennis.jpg" alt="Tennis Bild">
+                <img src="natur.jpg" alt="Natur Bild">
+                <img src="vue.jpg" alt="Vue Bild">
+                <img src="voyage.jpg" alt="Voyage Bild">
+                <img src="love.jpg" alt="Love Bild">
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- Contact section start -->
+    <section class="contact-info">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Kontaktinformationen</h2>
+            <p>
+                <strong>Email:</strong> vanettekamto@gmail.com<br>
+                <strong>Telefon:</strong> +49 1778056395<br>
+                <!-- Fügen Sie weitere Kontaktinformationen hinzu -->
+            </p>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Logo -->
+    <div class="logo">
+        <i class="fas fa-code"></i> ClauviaVK
+    </div>
+
+</body>
+</html>
