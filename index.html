@@ -1,24 +1,19 @@
-                                                                                                                                                                                                                                                                                                                                  
-
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
-
-    <!-- Link zur Font Awesome-Bibliothek für Symbole -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-RLjeVxQN9/VffKFO+2I9kUEQQ5vpuGtPAs+QvVYJFV8tA3xOq/mvIFpx2yu3ePf0xrX4mlA9IwdUkt1MzjtwCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Andere vorhandene Stile bleiben unverändert */
-
-        /* Neue Stile für die verbesserte Struktur */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f5f5f5;
+            color: #F0000;
             margin: 0;
             padding: 0;
         }
@@ -29,8 +24,8 @@
             overflow: hidden;
         }
 
-        header, footer {
-            background: #2c3e50;
+        header {
+            background: #333;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -41,118 +36,51 @@
             text-decoration: none;
         }
 
-        .profile-section, .experience, .portfolio, .contact-info {
-            flex: 1;
-            padding: 20px;
-            margin: 10px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5em;
+            color: #333;
         }
 
-        .profile-section, .experience, .portfolio, .contact-info {
+        .hero-section {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
-        }
-
-        .profile-image img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .profile-image img:hover, .hero-image img:hover {
-            transform: scale(1.1);
-        }
-
-        section h2::before {
-            font-family: 'Font Awesome 5 Free';
-            margin-right: 10px;
-            color: #3498db;
-        }
-
-        .fa-home::before {
-            content: '\f015';
-        }
-
-        .fa-user::before {
-            content: '\f007';
-        }
-
-        .fa-graduation-cap::before {
-            content: '\f19d';
-        }
-
-        .fa-briefcase::before {
-            content: '\f0b1';
-        }
-
-        .fa-images::before {
-            content: '\f03e';
-        }
-
-        .fa-envelope::before {
-            content: '\f0e0';
-        }
-
-        .contact-info {
-            background: #34495e;
-            color: #fff;
             padding: 40px 0;
         }
 
-        .contact-info p {
-            margin: 0;
-        }
-
-        /* Verbesserte Stile für das Portfolio */
-        .portfolio h2 {
-            text-align: center;
+        .hero-text,
+        .hero-info {
+            flex: 1;
+            padding: 0 20px;
         }
 
         .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .portfolio-images {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
+            margin-top: 20px;
         }
 
-        .hero-image img {
-            width: 100%;
-            max-width: 250px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .hero-image img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Verbesserte Stile für zusätzliche Abschnitte */
-        .skills, .projects, .social-icons {
-            background: #ecf0f1;
-            padding: 40px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-        }
-
-        /* Verbesserte Stile für das Logo */
-        .logo {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            font-size: 14px;
-            color: #7f8c8d;
+        .portfolio-images img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Logo -->
@@ -164,77 +92,55 @@
     <header>
         <div class="container">
             <div>
-                <h2><a href="#"><i class="fas fa-home"></i> Clauvia Vanette Kamto</a></h2>
-                <p>Stärke deine Online-Präsenz</p>
+                <h2><a href="#">Clauvia Vanette Kamto</a></h2>
+                <p>Enhance your online presence</p>
             </div>
             <div>
-                <a href="#" class="site-btn">Lebenslauf herunterladen</a>
-                <a href="#" class="site-btn">Entdecke mich</a>
+                <a href="#" class="site-btn">Download CV</a>
+                <a href="#" class="site-btn">Discover me</a>
             </div>
         </div>
     </header>
     <!-- Header section end -->
 
-    <!-- Profile section start -->
-    <section class="profile-section">
+    <!-- Hero section start -->
+    <section class="hero-section">
         <div class="container">
-            <div class="profile-info">
+            <div class="hero-text">
                 <h2>Clauvia Vanette Kamto</h2>
-                <p>Mehr über mich erfahren</p>
+                <p>Enhance your online presence</p>
             </div>
-            <div class="profile-image">
-                <img src="vanou.jpg" alt="Vanou Bild">                                                                                                                                                                                                                                                                  
+            <div class="hero-info">
+                <h2>General Info</h2>
+                <ul>
+                    <li><span>Date of Birth</span>october 02, 1996</li>
+                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
+                    <li><span>Email</span>vanettekamto@gmail.com</li>
+                    <!-- Add other details as needed -->
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="vanou.jpg" alt="Vanou Bild">
+                <img src="tennis.jpg" alt="Tennis Bild">
+                <img src="natur.jpg" alt="Natur Bild">
+                <img src="vue.jpg" alt="Vue Bild">
+                <img src="voyage.jpg" alt="Voyage Bild">
+                <img src="love.jpg" alt="Love Bild">
             </div>
         </div>
     </section>
-    <!-- Profile section end -->
+    <!-- Hero section end -->
 
-    <!-- About Me section start -->
-    <section class="about-me">
-        <div class="container">
-            <h2><i class="fas fa-user"></i> Über mich</h2>
-            <p>
-                Ich wurde in Kamerun geboren und wuchs zwischen Kamerun und  Frankreich auf. Tennis spiele ich seit ich 8 jahre alt bin un wurde immer von Webentwicklung und Designe fasziniert .
-            </p>
-        </div>
-    </section>
-    <!-- About Me section end -->
-
-    <!-- Education section start -->
-    <section class="education">
-        <div class="container">
-            <h2><i class="fas fa-graduation-cap"></i> Bildung</h2>
-            <p>
-                <strong>Bildung:</strong><br>
-                2014: Abitur, College Fleming<br>
-                09.2015 - 08.2018: Bachelor in Moderner Literatur, Universität Sorbonne, Frankreich<br>
-                09.2019 - 02.2023: Informationsmanagement, Hochschule Kaiserslautern<br> </p>
-        </div>
-    </section>
-    <!-- Education section end -->
-
-    <!-- Experience section start -->
-    <section class="experience">
-        <div class="container">
-            <h2><i class="fas fa-briefcase"></i> Erfahrung</h2>
-            <p>
-                <strong>Berufserfahrung:</strong><br>
-                09.2015 - 09.2018: Strategische Marketingbeauftragte, Nike
-                10.2019-08.2021  Kundenservice in der Logistik bei Ikea
-                <!--  -->
-            </p>
-        </div>
-    </section>
-    <!-- Experience section end -->
+    <!-- ... (Reste du code inchangé) -->
 
     <!-- Portfolio section start -->
     <section class="portfolio">
         <div class="container">
             <h2><i class="fas fa-images"></i> Portfolio</h2>
-            <div class="hero-image">
+            <div class="portfolio-images">
                 <img src="vanou.jpg" alt="Vanou Bild">
-                <!-- Fügen Sie weitere Bilder mit derselben Struktur hinzu -->
-                <img src="tennis.jpg" alt="tennis Bild">
+                <!-- Ajouter d'autres images avec la même structure -->
+                <img src="tennis.jpg" alt="Tennis Bild">
                 <img src="natur.jpg" alt="Natur Bild">
                 <img src="vue.jpg" alt="Vue Bild">
                 <img src="voyage.jpg" alt="Voyage Bild">
@@ -244,23 +150,8 @@
     </section>
     <!-- Portfolio section end -->
 
-    <!-- Contact section start -->
-    <section class="contact-info">
-        <div class="container">
-            <h2><i class="fas fa-envelope"></i> Kontaktinformationen</h2>
-            <p>
-                <strong>Email:</strong> vanettekamto@gmail.com<br>
-                <strong>Telefon:</strong> +49 1778056395<br>
-                <!-- Fügen Sie weitere Kontaktinformationen hinzu -->
-            </p>
-        </div>
-    </section>
-    <!-- Contact section end -->
-
-    <!-- Logo -->
-    <div class="logo">
-        <i class="fas fa-code"></i> ClauviaVK
-    </div>
+    <!-- ... (Reste du code inchangé) -->
 
 </body>
+
 </html>
