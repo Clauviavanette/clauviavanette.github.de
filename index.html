@@ -10,10 +10,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             background-color: #f5f5f5;
-            color: #F0000;
+            color: #333;
             margin: 0;
             padding: 0;
         }
@@ -77,6 +77,29 @@
             width: 150px;
             height: auto;
             margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            color: #FF4500;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 20px;
+            background-color: #FF4500;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            transition: width 0.8s ease;
         }
     </style>
 </head>
@@ -85,7 +108,7 @@
 
     <!-- Logo -->
     <div class="logo">
-        <img src="logo.jpg" alt="logo Bild">
+        <img src="logo.jpg" alt="Logo Bild">
     </div>
 
     <!-- Header section start -->
@@ -93,11 +116,11 @@
         <div class="container">
             <div>
                 <h2><a href="#">Clauvia Vanette Kamto</a></h2>
-                <p>Enhance your online presence</p>
+                <p>Erfahren Sie mehr über mich</p>
             </div>
             <div>
-                <a href="#" class="site-btn">Download CV</a>
-                <a href="#" class="site-btn">Discover me</a>
+                <a href="#" class="site-btn">willst du mehr über mich erfahren </a>
+                <a href="#" class="site-btn">dan bleib dran</a>
             </div>
         </div>
     </header>
@@ -113,14 +136,91 @@
             <div class="hero-info">
                 <h2>General Info</h2>
                 <ul>
-                    <li><span>Date of Birth</span>october 02, 1996</li>
-                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
-                    <li><span>Email</span>vanettekamto@gmail.com</li>
+                    <li><span>Date of Birth</span> October 02, 1996</li>
+                    <li><span>Address</span> Virginiastr 17, 66482 Zweibrücken</li>
+                    <li><span>Email</span> vanettekamto@gmail.com</li>
                     <!-- Add other details as needed -->
                 </ul>
             </div>
             <div class="hero-image">
                 <img src="vanou.jpg" alt="Vanou Bild">
+                
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About Me section start -->
+    <section class="about-me">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Ich  bin ich Kamerun geboren un wuchs zwischen Kamerun und Frankreich auf .Tennis spiele ich seit ich 8 jahre alt bin , und wurde immer von Webentwicklung und Design fasziniert.
+            </p>
+        </div>
+    </section>
+    <!-- About Me section end -->
+    
+    
+    <!-- Education section start -->
+    <section>
+        <div class="container">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <p>
+                <strong>Education:</strong><br>
+                2014: High School Diploma, College Fleming<br>
+                
+                09.2015 - 08.2018: Bachelor's in Modern Literature, Sorbonne University, France<br>
+                
+                09.2019 - 02.2023: Information Management, Kaiserslautern University<br>
+                
+                01.03.2023 - Present: Digital Media Marketing, Kaiserslautern University
+            </p>
+        </div>
+    </section>
+    <!-- Education section end -->
+
+
+    <!-- Experience section start -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p>
+                <strong>Experiences:</strong><br>
+                09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+                10.2019-09.2021 Mitarbeiterin bei Ikea im Kundenservice in der logistik Abteilung
+                <!-- Add other experiences as needed -->
+            </p>
+        </div>
+    </section>
+    <!-- Experience section end -->
+    
+
+    <!-- Skills section start -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill">
+                <h3>Développement</h3>
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Marketing</h3>
+                <div class="progress-bar" style="width: 87%;">87%</div>
+            </div>
+            <div class="skill">
+                <h3>Design</h3>
+                <div class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+            <div class="skill">
+                <h3>Programmation</h3>
+                <div class="progress-bar" style="width: 75%;">75%</div>
+
+                <!-- Portfolio section start -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-image">
+                <img src="vanou.jpg" alt="Vanou Bild">                                                                                                                                                                                                                                                                  
                 <img src="tennis.jpg" alt="Tennis Bild">
                 <img src="natur.jpg" alt="Natur Bild">
                 <img src="vue.jpg" alt="Vue Bild">
@@ -129,16 +229,21 @@
             </div>
         </div>
     </section>
-    <!-- Hero section end -->
+    <!-- Portfolio section end -->
 
-    <!-- ... (Reste du code inchangé) -->
 
-    <!-- Portfolio section start -->
-    <section class="portfolio">
-        <div class="container">
-            <h2><i class="fas fa-images"></i> Portfolio</h2>
-            <div class="portfolio-images">
-                <img src="vanou.jpg" alt="Vanou Bild">
-                <!-- Ajouter d'autres images avec la même structure -->
-                <img src="tennis.jpg" alt="Tennis Bild">
-                <img src="natur
+
+                
+            </div><!-- Contact section start -->
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <p>
+            <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
+            <strong>Telefon:</strong> +49 177 8056395<br>
+            <strong>Ort:</strong> Zweibrücken, Deutschland
+        </p>
+    </div>
+</section>
+<!-- Contact section end -->
+            <div class
