@@ -43,6 +43,7 @@
 
         .profile-section {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding: 40px 0;
@@ -50,21 +51,28 @@
             color: #fff;
         }
 
-        .profile-info {
+        .profile-info, .about-me, .education, .experience, .portfolio, .contact-info {
             flex: 1;
-            padding: 0 20px;
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
 
-        .profile-image {
-            flex: 1;
-            text-align: center;
+        .profile-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
 
-        section {
-            padding: 40px 0;
+        .profile-image img:hover, .hero-image img:hover {
+            transform: scale(1.1);
         }
 
-        /* Stile für Symbole neben den Abschnittstiteln */
         section h2::before {
             font-family: 'Font Awesome 5 Free';
             margin-right: 10px;
@@ -79,6 +87,10 @@
             content: '\f007';
         }
 
+        .fa-graduation-cap::before {
+            content: '\f19d';
+        }
+
         .fa-briefcase::before {
             content: '\f0b1';
         }
@@ -91,8 +103,22 @@
             content: '\f0e0';
         }
 
-        /* Stile für das Portfolio */
-        .hero-section {
+        .contact-info {
+            background: #34495e;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        /* Verbesserte Stile für das Portfolio */
+        .portfolio h2 {
+            text-align: center;
+        }
+
+        .hero-image {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -111,15 +137,13 @@
             transform: scale(1.1);
         }
 
-        /* Stile für die Kontaktinformationen */
-        .contact-info {
-            background: #34495e;
-            color: #fff;
+        /* Verbesserte Stile für zusätzliche Abschnitte */
+        .skills, .projects, .social-icons {
+            background: #ecf0f1;
             padding: 40px 0;
-        }
-
-        .contact-info p {
-            margin: 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -130,11 +154,11 @@
         <div class="container">
             <div>
                 <h2><a href="#"><i class="fas fa-home"></i> Clauvia Vanette Kamto</a></h2>
-                <p>Enhance your online presence</p>
+                <p>Stärke deine Online-Präsenz</p>
             </div>
             <div>
-                <a href="#" class="site-btn">Download CV</a>
-                <a href="#" class="site-btn">Discover me</a>
+                <a href="#" class="site-btn">Lebenslauf herunterladen</a>
+                <a href="#" class="site-btn">Entdecke mich</a>
             </div>
         </div>
     </header>
@@ -145,7 +169,7 @@
         <div class="container">
             <div class="profile-info">
                 <h2>Clauvia Vanette Kamto</h2>
-                <p>Enhance your online presence</p>
+                <p>Stärke deine Online-Präsenz</p>
             </div>
             <div class="profile-image">
                 <img src="vanou.jpg" alt="Vanou Bild">                                                                                                                                                                                                                                                                  
@@ -155,46 +179,31 @@
     <!-- Profile section end -->
 
     <!-- About Me section start -->
-    <section>
+    <section class="about-me">
         <div class="container">
-            <h2><i class="fas fa-user"></i> About Me</h2>
+            <h2><i class="fas fa-user"></i> Über mich</h2>
             <p>
-                Ich bin in Kamerun geboren und zwischen Kamerun und Frankreich aufgewachsen.
+                Ich wurde in Kamerun geboren und wuchs zwischen Kamerun un   Frankreich auf. Tennis spiele ich seit ich 8 jahre alt bin und bin seit ich kind für Webentwicklung un Designe fasziniert.
             </p>
         </div>
     </section>
     <!-- About Me section end -->
 
     <!-- Education section start -->
-    <section>
+    <section class="education">
         <div class="container">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <h2><i class="fas fa-graduation-cap"></i> Bildung</h2>
             <p>
-                <strong>Education:</strong><br>
-                2014: High School Diploma, College Fleming<br>
-                09.2015 - 08.2018: Bachelor's in Modern Literature, Sorbonne University, France<br>
-                09.2019 - 02.2023: Information Management, Kaiserslautern University<br>
-                01.03.2023 - Present: Digital Media Marketing, Kaiserslautern University
+                <strong>Bildung:</strong><br>
+                2014: Abitur, College Fleming<br>
+                09.2015 - 08.2018: Bachelor in Moderner Literatur, Universität Sorbonne, Frankreich<br>
+                09.2019 - 02.2023: Informationsmanagement, Hochschule Kaiserslautern<br>
+                01.03.2023 - heute: Digitales Medienmarketing, Hochschule Kaiserslautern
             </p>
         </div>
     </section>
     <!-- Education section end -->
 
     <!-- Experience section start -->
-    <section>
+    <section class="experience">
         <div class="container">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <p>
-                <strong>Work Experience:</strong><br>
-                09.2015 - 09.2018: Strategic Marketing Officer, Nike
-            </p>
-        </div>
-    </section>
-    <!-- Experience section end -->
-
-    <!-- Portfolio section start -->
-    <section class="hero-section">
-        <div class="container">
-            <h2><i class="fas fa-images"></i> Portfolio</h2>
-            <div class="hero-image">
-                <img src="⬤
