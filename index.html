@@ -2,12 +2,14 @@
 <html lang="de">
 
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-RLjeVxQN9/VffKFO+2I9kUEQQ5vpuGtPAs+QvVYJFV8tA3xOq/mvIFpx2yu3ePf0xrX4mlA9IwdUkt1MzjtwCg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+        
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -38,13 +40,16 @@
             text-decoration: none;
         }
 
-        .logo {
-            position: hintegrung;
-            top: 5px;
-            mitte: 10px;
-            font-size: 0.5em;
-            color: #333;
-        }
+        .logo-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    width: 50px; /* Passen Sie die Größe je nach Bedarf an */
+    height: auto;
+}
 
         .hero-section {
             display: flex;
@@ -138,7 +143,23 @@
 
 <body>
 
-   
+     <!-- Header section start -->
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <img src="pfad/zum/ihrem/logo.jpg" alt="Ihr Logo" class="logo"> <!-- Fügen Sie den Pfad zu Ihrem Bild anstelle von "pfad/zum/ihrem/logo.jpg" ein -->
+        </div>
+        <div>
+            <h2><a href="#">Clauvia Vanette Kamto</a></h2>
+            <p>Erfahren Sie mehr über mich</p>
+        </div>
+        <div>
+            <a href="#" class="site-btn">Willst du mehr über mich erfahren</a>
+            <a href="#" class="site-btn">Dann bleib dran</a>
+        </div>
+    </div>
+</header>
+<!-- Header section end -->
 
     <!-- Header section start -->
     <header>
