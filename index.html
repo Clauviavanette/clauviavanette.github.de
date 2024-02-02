@@ -1,147 +1,226 @@
 
- <!-- index.html -->
-<section class="hero-section">
-    <div class="container">
-        <div class="hero-text">
-            <h2>Clauvia Vanette Kamto</h2>
-            <p>Wilkommen</p>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clauvia Vanette Kamto - Portfolio</title>
+    <link rel="stylesheet" href="your-stylesheet.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h2><a href="index.html">Clauvia Vanette Kamto</a></h2>
+            <p>Erfahren Sie mehr über mich</p>
         </div>
-        <div class="hero-info">
-            <h2>General Info</h2>
-            <ul>
-                <li><span>Date of Birth</span> October 02, 1996</li>
-                <li><span>Address</span> Virginiastr 17, 66482 Zweibrücken</li>
-                <li><span>Email</span> vanettekamto@gmail.com</li>
-            </ul>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="skills.html">Skill</a></li>
+            <li><a href="extra-section.html">Extra Section</a></li>
+            <li><a href="university.html">University</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="teacher.html">Professor Hendrik Speck</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-me">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Ich bin Clauvia Vanette Kamto, geboren in Kamerun. Meine Leidenschaften sind Tennis, Webentwicklung und Design. Als leidenschaftliche Studentin strebe ich danach, die Feinheiten des digitalen Marketings zu beherrschen.
+            </p>
         </div>
-        <div class="hero-image">
-            <img src="vanou.jpg" alt="Vanou Bild">
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-images">
+                <a href="portfolio1.jpg" data-lightbox="portfolio" data-title="Webdesign Projekt">
+                    <img src="portfolio1.jpg" alt="Webdesign Projekt" style="width: 150px; height: 150px;">
+                </a>
+                <a href="portfolio2.jpg" data-lightbox="portfolio" data-title="Marketing Kampagne">
+                    <img src="portfolio2.jpg" alt="Marketing Kampagne" style="width: 150px; height: 150px;">
+                </a>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <p>
+                <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
+                <strong>Telefon:</strong> +49 1778056395<br>
+                <strong>Ort:</strong> Zweibrücken, Deutschland
+            </p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill">
+                <h3>Webentwicklung</h3>
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Marketing</h3>
+                <div class="progress-bar" style="width: 87%;">87%</div>
+            </div>
+         <h3>Développement</h3>
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Marketing</h3>
+                <div class="progress-bar" style="width: 87%;">87%</div>
+            </div>
+            <div class="skill">
+                <h3>Design</h3>
+                <div class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+            <div class="skill">
+                <h3>Programmation</h3>
+                <div class="progress-bar" style="width: 75%;">75%</div>
+             </section>
+<!-- skills section end -->
+
+
+
+
+
+	<!-- Extra section start -->
+<section class="extra-section spad pb-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2">
+                <div class="section-title">
+                    <h2 style="color: #3E4095;">Extra Skills</h2>
+                </div>
+                <table class="skills-table">
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Kreativität 🎨</h3>
+                            <p>Ich liebe es, kreative Lösungen zu finden und innovative Ideen umzusetzen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress1" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">75%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Kommunikation 🗣</h3>
+                            <p>Ich bin sowohl schriftlich als auch mündlich kommunikationsstark und überzeuge durch klare Botschaften.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress2" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">83%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Teamarbeit 🤝</h3>
+                            <p>Ich arbeite gerne im Team und trage dazu bei, gemeinsame Ziele zu erreichen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress3" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">90%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Analytisches Denken 🧠</h3>
+                            <p>Ich kann komplexe Probleme analysieren und effektive Lösungen entwickeln.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress4" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">78%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Zeitmanagement ⌛</h3>
+                            <p>Ich kann meine Zeit effizient organisieren, um Projekte termingerecht abzuschließen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress5" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">85%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>
+<!-- Extra section end -->
 
-<!-- about.html -->
-<section class="about-me">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p>
-            Ich bin in Kamerun geboren und wuchs zwischen Kamerun und Frankreich auf. Tennis spiele ich seit ich 8 Jahre alt bin und wurde immer von Webentwicklung und Design fasziniert. Als leidenschaftliche Studentin heiße ich Vanette Kamto. Meine angeborene Neugierde für Technologie hat mich zum Tennis und Digital Media Marketing geführt. Durch mein Studium strebe ich danach, die Feinheiten des digitalen Marketings zu beherrschen und ständig innovative Wege zu finden, um meine Leidenschaft mit moderner Technologie zu verbinden. Auf dem Tennisplatz und in der digitalen Welt versuche ich, meine Kreativität auszudrücken und neue Perspektiven mit entschlossener Intelligenz zu erforschen.
-        </p>
-    </div>
-</section>
 
-<!-- education.html -->
-<section class="education">
-    <div class="container">
-        <h2 class="section-title">Ausbildung</h2>
-
-        <div class="education-item">
-            <h3>Abitur</h3>
-            <p>Studiendauer: 2014, College Fleming</p>
+    <section class="extra-section">
+        <div class="container">
+            <h2 class="section-title">Extra Section</h2>
+            <p>Extra Informationen hier...</p>
         </div>
+    </section>
 
-        <div class="education-item">
-            <h3>Bachelor</h3>
-            <p>Studiendauer: 09.2015 - 08.2018</p>
-            <p>Universität: Sorbonne Universität</p>
+    <section class="university-section">
+        <div class="container">
+            <h2 class="section-title">University</h2>
+            <p>Studium an der Hochschule Kaiserslautern</p>
+            <p>Website: <a href="https://www.hs-kl.de/" target="_blank">www.hs-kl.de</a></p>
         </div>
+    </section>
 
-        <div class="education-item">
-            <h3>Hochschule Kaiserslautern</h3>
-            <p>Studiendauer: 09.2019 - 02.2023</p>
-            <p>Studiengang: Information Management</p>
+    <section class="hometown-section">
+        <div class="container">
+            <h2 class="section-title">Hometown</h2>
+            <p>Zweibrücken</p>
+            <p>Website: <a href="https://www.zweibruecken.de/de/" target="_blank">www.zweibruecken.de</a></p>
         </div>
+    </section>
 
-        <div class="education-item">
-            <h3>Hochschule Kaiserslautern</h3>
-            <p>Studiendauer: 01.03.2023 - heute</p>
-            <p>Studiengang: Digital Media Marketing</p>
+    <section class="teacher-section">
+        <div class="container">
+            <h2 class="section-title">Professor Hendrik Speck</h2>
+            <p>Professor an der Hochschule Kaiserslautern</p>
+            <p>Web: <a href="http://www.hendrikspeck.com/" target="_blank">www.hendrikspeck.com</a></p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- experience.html -->
-<section class="experience">
-    <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <p>
-            <strong>Experiences:</strong><br>
-            09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+    <style>
+        /* Your stylesheet styles here */
+    </style>
 
-            <strong>Experiences:</strong><br>
-            10.2019-09.2021 Mitarbeiterin bei Ikea im Kundenservice in der logistik Abteilung
-        </p>
-    </div>
-</section>
+</body>
 
-<!-- skills.html -->
-<section class="skills">
-    <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skill">
-            <h3>Développement</h3>
-            <div class="progress-bar" style="width: 80%;">80%</div>
-        </div>
-        <div class="skill">
-            <h3>Marketing</h3>
-            <div class="progress-bar" style="width: 87%;">87%</div>
-        </div>
-        <div class="skill">
-            <h3>Design</h3>
-            <div class="progress-bar" style="width: 70%;">70%</div>
-        </div>
-        <div class="skill">
-            <h3>Programmation</h3>
-            <div class="progress-bar" style="width: 75%;">75%</div>
-        </div>
-    </div>
-</section>
-
-<!-- portfolio.html -->
-<section class="portfolio">
-    <div class="container">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="portfolio-images">
-            <a href="enjoy.jpg" data-lightbox="portfolio" data-title="enjoy Bild">
-                <img src="enjoy.jpg" alt="Enjoy Bild" style="width: 150px; height: 150px;">
-            </a>
-            <!-- Add more portfolio items as needed -->
-        </div>
-    </div>
-</section>
-
-<!-- contact.html -->
-<section class="contact">
-    <div class="container">
-        <h2 class="section-title">Kontakt</h2>
-        <p>
-            <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
-            <strong>Telefon:</strong> +49 177 8056395<br>
-            <strong>Ort:</strong> Zweibrücken, Deutschland
-        </p>
-    </div>
-</section>
-
-<!-- university.html -->
-<section class="university-section">
-    <h2>Hochschule Kaiserslautern</h2>
-    <p>Website: <a href="https://www.hs-kl.de/" target="_blank">www.hs-kl.de</a></p>
-</section>
-
-<!-- hometown.html -->
-<section class="hometown-section">
-    <h2>Zweibrücken</h2>
-    <p>Website: <a href="https://www.zweibruecken.de/de/" target="_blank">www.zweibruecken.de</a></p>
-</section>
-
-<!-- teacher.html -->
-<section class="teacher-section">
-    <h2>Professor Hendrik Speck</h2>
-    <p>Professor at Hochschule Kaiserslautern</p>
-    <p>Web: <a href="http://www.hendrikspeck.com/" target="_blank">www.hendrikspeck.com</a></p>
-</section>
-
-<!-- your-stylesheet.css -->
-<style>
-    /* Your stylesheet styles here */
-</style>
+</html> 
