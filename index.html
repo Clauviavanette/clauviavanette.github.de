@@ -2,89 +2,91 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head>{
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #3E4095;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    float: left;
-    display: block;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.section {
-    display: none;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 10px;
-}
-
-.photo {
-    width: 100%;
-    height: auto;
-}
-
-.contact-info {
-    border: 2px solid #3E4095;
-    padding: 10px;
-    background-color: #f9f9f9;
-}
-
-.skills-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.skills-table th,
-.skills-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votre Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Deine CSS-Stile hier einfügen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3E4095;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+            display: block;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+        }
+
+        .contact-info {
+            border: 2px solid #3E4095;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .skills-table th, .skills-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -121,16 +123,99 @@ nav a:hover {
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <p>Contenu de la section About Me...</p>
+                <section class="about-me">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Ich  bin in Kamerun geboren und wuchs zwischen Kamerun und Frankreich auf .Tennis spiele ich seit ich 8 jahre alt bin , und wurde immer von Webentwicklung und Design fasziniert.Als leidenschaftliche Studentin heiße ich Vanette Kamto. Meine angeborene Neugierde für Technologie hat mich zum Tennis und Digital Media Marketing geführt. Durch mein Studium strebe ich danach, die Feinheiten des digitalen Marketings zu beherrschen und ständig innovative Wege zu finden, um meine Leidenschaft mit moderner Technologie zu verbinden. Auf dem Tennisplatz und in der digitalen Welt versuche ich, meine Kreativität auszudrücken und neue Perspektiven mit entschlossener Intelligenz zu erforschen.
+            </p>
         </div>
     </section>
 
+
     <section id="portfolio" class="section">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <p>Contenu de la section Portfolio...</p>
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-images">
+            <a href="enjoy.jpg" data-lightbox="portfolio" data-title="enjoy Bild">
+                <img src="enjoy.jpg" alt="Enjoy Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="Tennis.jpg" data-lightbox="portfolio" data-title="Tennis Bild">
+                <img src="Tennis.jpg" alt="Tennis Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="enjoy.jpg" data-lightbox="portfolio" data-title="enjoy Bild">
+                <img src="enjoy.jpg" alt="enjoy Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="logo.jpg" data-lightbox="portfolio" data-title="logo Bild">
+                <img src="logo.jpg" alt="Logo Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="natur.jpg" data-lightbox="portfolio" data-title="natur Bild">
+                <img src="natur.jpg" alt="Natur Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="vue.jpg" data-lightbox="portfolio" data-title="vue Bild">
+                <img src="vue.jpg" alt="Vue Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="voyage.jpg" data-lightbox="portfolio" data-title="voyage Bild">
+                <img src="voyage.jpg" alt="Voyage Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="love.jpg" data-lightbox="portfolio" data-title="love Bild">
+                <img src="love.jpg" alt="Love Bild" style="width: 150px; height: 150px;">
+                    </a>
+                 <!-- Education section start -->
+<section class="education">
+    <div class="container">
+        <h2 class="section-title">Ausbildung</h2>
+        
+        <div class="education-item">
+            <h3>Abitur</h3>
+            <p>Studiendauer: 2014, College Fleming</p>
+        </div>
+        
+        <div class="education-item">
+            <h3>Bachelor</h3>
+            <p>Studiendauer: 09.2015 - 08.2018</p>
+            <p>Universität: Sorbonne Universität</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Hochschule Kaiserslautern</h3>
+            <p>Studiendauer: 09.2019 - 02.2023</p>
+            <p>Studiengang: Information Management</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Hochschule Kaiserslautern</h3>
+            <p>Studiendauer: 01.03.2023 - heute</p>
+            <p>Studiengang: Digital Media Marketing</p>
+        </div>
+    </div>
+</section>
+<!-- Education section end -->
+                <!-- Experience section start -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p>
+                <strong>Experiences:</strong><br>
+                
+                09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+                
+               
+                <strong>Experiences:</strong><br>
+    
+                
+                10.2019-09.2021 Mitarbeiterin bei Ikea im Kundenservice in der logistik Abteilung
+                
+                <!-- Add other experiences as needed -->
+            </p>
         </div>
     </section>
+    <!-- Experience section end -->
+
+
+        
+
+
 
     <section id="contact" class="section">
         <div class="container">
@@ -146,74 +231,112 @@ nav a:hover {
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">Skills</h2>
+              <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill">
+                <h3>Développement</h3>
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Marketing</h3>
+                <div class="progress-bar" style="width: 87%;">87%</div>
+            </div>
+            <div class="skill">
+                <h3>Design</h3>
+                <div class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+            <div class="skill">
+                <h3>Programmation</h3>
+                <div class="progress-bar" style="width: 75%;">75%</div>
+
+
+
+
+	<!-- Extra section start -->
+<section class="extra-section spad pb-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2">
+                <div class="section-title">
+                    <h2 style="color: #3E4095;">Extra Skills</h2>
+                
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Kreativität 🎨</h3>
+                            <p>Ich liebe es, kreative Lösungen zu finden und innovative Ideen umzusetzen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress1" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">75%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Kommunikation 🗣</h3>
+                            <p>Ich bin sowohl schriftlich als auch mündlich kommunikationsstark und überzeuge durch klare Botschaften. </p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress2" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">83%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Teamarbeit 🤝</h3>
+                            <p>Ich arbeite gerne im Team und trage dazu bei, gemeinsame Ziele zu erreichen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress3" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">90%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Analytisches Denken 🧠</h3>
+                            <p>Ich kann komplexe Probleme analysieren und effektive Lösungen entwickeln.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress4" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">78%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Zeitmanagement ⌛</h3>
+                            <p>Ich kann meine Zeit effizient organisieren, um Projekte termingerecht abzuschließen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress5" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">85%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
             <table class="skills-table">
                 <tr>
-                    <th>Skill</th>
-                    <th>Percentage</th>
-                </tr>
-                <tr>
-                    <td>Webentwicklung</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Marketing</td>
-                    <td>65%</td>
-                </tr>
-                <tr>
-                    <td>Design</td>
-                    <td>80%</td>
-                </tr>
-                <!-- Ajoutez d'autres compétences au besoin -->
-            </table>
-        </div>
-    </section>
-
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Ausbildung</h2>
-            <p>Contenu de la section Ausbildung...</p>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Erfahrung</h2>
-            <p>Contenu de la section Erfahrung...</p>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-    document.addEventListener("DOMContentLoaded", function () {
-    // Funktion zum Anzeigen/Ausblenden einer Sektion beim Klicken
-    function toggleSection(sectionId) {
-        var section = document.getElementById(sectionId);
-        if (section.style.display === "none" || section.style.display === "") {
-            section.style.display = "block";
-        } else {
-            section.style.display = "none";
-        }
-    }
-
-    // Fügen Sie jedem Navigationslink einen Event-Handler hinzu
-    var navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach(function (link) {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            var sectionId = link.getAttribute("href").substring(1); // Entfernt das #
-            toggleSection(sectionId);
-        });
-    });
-
-    // Zeige/verberge die Bilder der Galerie beim Klicken
-    var portfolioImages = document.querySelectorAll(".portfolio-images img");
-    portfolioImages.forEach(function (image) {
-        image.addEventListener("click", function () {
-            var imageId = image.getAttribute("id");
-            toggleSection(imageId + "-details");
-        });
-    });
-});
-
-</body>
-
-</html>
+                    <th>Skill</
