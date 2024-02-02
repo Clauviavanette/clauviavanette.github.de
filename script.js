@@ -22,12 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Zeige/verberge die Extra-Sektion beim Klicken
-    var extraSection = document.getElementById("extra");
-    extraSection.addEventListener("click", function () {
-        toggleSection("extra-details");
-    });
-
     // Zeige/verberge die Bilder der Galerie beim Klicken
     var portfolioImages = document.querySelectorAll(".portfolio-images img");
     portfolioImages.forEach(function (image) {
