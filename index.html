@@ -6,86 +6,262 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-RLjeVxQN9/VffKFO+2I9kUEQQ5vpuGtPAs+QvVYJFV8tA3xOq/mvIFpx2yu3ePf0xrX4mlA9IwdUkt1MzjtwCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Vos styles personnalisés ici */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+
+            
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: #FF4500;
+            text-decoration: none;
+        }
+
+       
+
+        .hero-section {
+            display: flex;
+            justify-content: hintegrund;
+            align-items: hintergrund;
+            padding: 10px 0;
+        }
+
+        .hero-text,
+        .hero-info {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        section {
+            padding: 10px 0;
+        }
+
+      
+}
+
+
+    /* Portfolio section styles */
+.portfolio {
+    padding: 40px 0;
+}
+
+.portfolio-images {
+    display: flex;
+    justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+        
+}
+
+.portfolio-images {
+    display: flex;
+    fjustify-content: space-between;
+            align-items: center;
+}
+
+.portfolio-images img {
+    text-align: center;
+    margin: 20px; /* Füge etwas Platz zwischen den Bildern hinzu */
+}
+
+.education-item {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Linie zwischen den Bildungsabschnitten */
+    padding-bottom: 20px;
+}
+
+.education-item h3 {
+    color: #333;
+}
+
+.education-item p {
+    color: #777;
+    margin: 5px 0;
+}
+
+}
+        .section-title {
+            color: #FF4500;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 20px;
+            background-color: #FF4500;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            transition: width 0.8s ease;
+        }
     </style>
 </head>
 
 <body>
 
+    
+    <!-- Header section start -->
     <header>
         <div class="container">
-            <h2><a href="index.html">Clauvia Vanette Kamto</a></h2>
-            <p>Erfahren Sie mehr über mich</p>
+            <div>
+                <h2><a href="#">Clauvia Vanette Kamto</a></h2>
+                <p>Erfahren Sie mehr über mich</p>
+            </div>
+            <div>
+                <a href="#" class="site-btn">willst du mehr über mich erfahren </a>
+                <a href="#" class="site-btn">dan bleib dran</a>
+            </div>
         </div>
     </header>
+    <!-- Header section end -->
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="extra-section.html">Extra Section</a></li>
-            <li><a href="university.html">University</a></li>
-            <li><a href="hometown.html">Hometown</a></li>
-            <li><a href="teacher.html">Professor Hendrik Speck</a></li>
-        </ul>
-    </nav>
+    <!-- Hero section start -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Clauvia Vanette Kamto</h2>
+                <p> wilkommen </p>
+            </div>
+            <div class="hero-info">
+                <h2>General Info</h2>
+                <ul>
+                    <li><span>Date of Birth</span> October 02, 1996</li>
+                    <li><span>Address</span> Virginiastr 17, 66482 Zweibrücken</li>
+                    <li><span>Email</span> vanettekamto@gmail.com</li>
+                    <!-- Add other details as needed -->
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="vanou.jpg" alt="Vanou Bild">
+                
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
 
+    <!-- About Me section start -->
     <section class="about-me">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <p>
-                Ich bin Clauvia Vanette Kamto, geboren in Kamerun. Meine Leidenschaften sind Tennis, Webentwicklung und Design. Als leidenschaftliche Studentin strebe ich danach, die Feinheiten des digitalen Marketings zu beherrschen.
+                Ich  bin in Kamerun geboren und wuchs zwischen Kamerun und Frankreich auf .Tennis spiele ich seit ich 8 jahre alt bin , und wurde immer von Webentwicklung und Design fasziniert.Als leidenschaftliche Studentin heiße ich Vanette Kamto. Meine angeborene Neugierde für Technologie hat mich zum Tennis und Digital Media Marketing geführt. Durch mein Studium strebe ich danach, die Feinheiten des digitalen Marketings zu beherrschen und ständig innovative Wege zu finden, um meine Leidenschaft mit moderner Technologie zu verbinden. Auf dem Tennisplatz und in der digitalen Welt versuche ich, meine Kreativität auszudrücken und neue Perspektiven mit entschlossener Intelligenz zu erforschen.
             </p>
         </div>
     </section>
-
-    <section class="portfolio">
+    <!-- About Me section end -->
+    
+    
+ <!-- Education section start -->
+<section class="education">
     <div class="container">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="portfolio-images">
-            <img src="vanou.jpg" alt="Webdesign Projekt 1" style="width: 150px; height: 150px;">
-            <img src="voyage.jpg" alt="Marketing Kampagne 2" style="width: 150px; height: 150px;">
-            <img src="Tennis.jpg" alt="Projekt 3" style="width: 150px; height: 150px;">
-            <img src="vue.jpg" alt="Projekt 4" style="width: 150px; height: 150px;">
-            <img src="enjoy.jpg" alt="Projekt 5" style="width: 150px; height: 150px;">
-            <img src="logo.jpg" alt="Projekt 6" style="width: 150px; height: 150px;">
-            <img src="love.jpg" alt="Projekt 7" style="width: 150px; height: 150px;">
-            <!-- Fügen Sie bei Bedarf weitere Portfolio-Elemente hinzu -->
+        <h2 class="section-title">Ausbildung</h2>
+        
+        <div class="education-item">
+            <h3>Abitur</h3>
+            <p>Studiendauer: 2014, College Fleming</p>
+        </div>
+        
+        <div class="education-item">
+            <h3>Bachelor</h3>
+            <p>Studiendauer: 09.2015 - 08.2018</p>
+            <p>Universität: Sorbonne Universität</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Hochschule Kaiserslautern</h3>
+            <p>Studiendauer: 09.2019 - 02.2023</p>
+            <p>Studiengang: Information Management</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Hochschule Kaiserslautern</h3>
+            <p>Studiendauer: 01.03.2023 - heute</p>
+            <p>Studiengang: Digital Media Marketing</p>
         </div>
     </div>
 </section>
+<!-- Education section end -->
 
-    <section class="contact">
+
+    <!-- Experience section start -->
+    <section class="experience">
         <div class="container">
-            <h2 class="section-title">Kontakt</h2>
+            <h2 class="section-title">Experience</h2>
             <p>
-                <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
-                <strong>Telefon:</strong> +49 1778056395<br>
-                <strong>Ort:</strong> Zweibrücken, Deutschland
+                <strong>Experiences:</strong><br>
+                
+                09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
+                
+               
+                <strong>Experiences:</strong><br>
+    
+                
+                10.2019-09.2021 Mitarbeiterin bei Ikea im Kundenservice in der logistik Abteilung
+                
+                <!-- Add other experiences as needed -->
             </p>
         </div>
     </section>
+    <!-- Experience section end -->
+    
 
-    <section class="skills">
-    <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skill">
-            <h3>Webentwicklung</h3>
-            <div class="progress-bar" style="width: 80%;">80%</div>
-        </div>
-        <div class="skill">
-            <h3>Marketing</h3>
-            <div class="progress-bar" style="width: 87%;">87%</div>
-        </div>
-        <!-- Ajoutez d'autres compétences au besoin -->
-    </div>
-</section>
+    <!-- Skills section start -->
+  <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill">
+                <h3>Développement</h3>
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Marketing</h3>
+                <div class="progress-bar" style="width: 87%;">87%</div>
+            </div>
+            <div class="skill">
+                <h3>Design</h3>
+                <div class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+            <div class="skill">
+                <h3>Programmation</h3>
+                <div class="progress-bar" style="width: 75%;">75%</div>
 
-<!-- Extra section start -->
+
+
+
+	<!-- Extra section start -->
 <section class="extra-section spad pb-0">
     <div class="container-fluid">
         <div class="row">
@@ -108,53 +284,186 @@
                             </div>
                         </td>
                     </tr>
-                    <!-- Ajoutez d'autres compétences supplémentaires au besoin -->
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Kommunikation 🗣</h3>
+                            <p>Ich bin sowohl schriftlich als auch mündlich kommunikationsstark und überzeuge durch klare Botschaften.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress2" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">83%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Teamarbeit 🤝</h3>
+                            <p>Ich arbeite gerne im Team und trage dazu bei, gemeinsame Ziele zu erreichen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress3" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">90%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Analytisches Denken 🧠</h3>
+                            <p>Ich kann komplexe Probleme analysieren und effektive Lösungen entwickeln.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress4" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">78%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Zeitmanagement ⌛</h3>
+                            <p>Ich kann meine Zeit effizient organisieren, um Projekte termingerecht abzuschließen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress5" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">85%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>
     </div>
 </section>
 <!-- Extra section end -->
-    <script>
-        <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Fonction pour afficher/masquer une section au clic
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
-        }
 
-        // Ajoutez un gestionnaire d'événement à chaque lien de la navigation
-        var navLinks = document.querySelectorAll("nav a");
-        navLinks.forEach(function (link) {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-                var sectionId = link.getAttribute("href").substring(1); // Retire le #
-                toggleSection(sectionId);
-            });
-        });
+<style>
+    .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
 
-        // Affiche/masque la section Extra au clic
-        var extraSection = document.getElementById("extra");
-        extraSection.addEventListener("click", function () {
-            toggleSection("extra-details");
-        });
+    .skill-cell, .progress-cell {
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
 
-        // Affiche/masque les images de la galerie au clic
-        var portfolioImages = document.querySelectorAll(".portfolio-images img");
-        portfolioImages.forEach(function (image) {
-            image.addEventListener("click", function () {
-                var imageId = image.getAttribute("id");
-                toggleSection(imageId + "-details");
-            });
-        });
+    .circle-progress {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .prog-circle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff; /* Hintergrundfarbe des Fortschrittskreises */
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .progress-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .progress-info h2 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+</style>
+
+              <<!-- Portfolio section start -->
+<section class="portfolio">
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-images">
+            <a href="enjoy.jpg" data-lightbox="portfolio" data-title="enjoy Bild">
+                <img src="enjoy.jpg" alt="Enjoy Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="Tennis.jpg" data-lightbox="portfolio" data-title="Tennis Bild">
+                <img src="Tennis.jpg" alt="Tennis Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="enjoy.jpg" data-lightbox="portfolio" data-title="enjoy Bild">
+                <img src="enjoy.jpg" alt="enjoy Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="logo.jpg" data-lightbox="portfolio" data-title="logo Bild">
+                <img src="logo.jpg" alt="Logo Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="natur.jpg" data-lightbox="portfolio" data-title="natur Bild">
+                <img src="natur.jpg" alt="Natur Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="vue.jpg" data-lightbox="portfolio" data-title="vue Bild">
+                <img src="vue.jpg" alt="Vue Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="voyage.jpg" data-lightbox="portfolio" data-title="voyage Bild">
+                <img src="voyage.jpg" alt="Voyage Bild" style="width: 150px; height: 150px;">
+            </a>
+            <a href="love.jpg" data-lightbox="portfolio" data-title="love Bild">
+                <img src="love.jpg" alt="Love Bild" style="width: 150px; height: 150px;">
+            </a>
+
+            
+
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-images">
+            <img src="enjoy.jpg" alt="enjoy Bild" style="width: 150px; height: 150px;">
+            <img src="Tennis.jpg" alt="Tennis Bild" style="width: 150px; height: 150px;">
+            <img src="natur.jpg" alt="natur Bild" style="width: 150px; height: 150px;">
+            <img src="vue.jpg" alt="vue Bild" style="width: 150px; height: 150px;">
+            <img src="voyage.jpg" alt="voyage Bild" style="width: 150px; height: 150px;">
+            <img src="love.jpg" alt="love Bild" style="width: 150px; height: 150px;">
+        </div>
+    </div>
+</section>
+<!-- Portfolio section end -->
+
+
+                
+            </div><!-- Contact section start -->
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title">Kontakt</h2>
+        <p>
+            <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
+            <strong>Telefon:</strong> +49 177 8056395<br>
+            <strong>Ort:</strong> Zweibrücken, Deutschland
+        </p>
+    </div>
+</section>
+<!-- Contact section end -->
+
+           
+            <!-- Footer section start -->
+	<footer class="footer-section">
+		<!-- Lightbox Init -->
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
     });
 </script>
-
-</body>
-
-</html>
+		<div class="container text-center">
+			
+</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+            <div class
