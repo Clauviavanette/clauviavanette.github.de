@@ -6,9 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauvia Vanette Kamto - Portfolio</title>
-    <link rel="stylesheet" href="your-stylesheet.css">
     <style>
-        /* Ajoutez ici vos styles personnalisés en fonction de vos préférences */
+        /* Vos styles personnalisés ici */
     </style>
 </head>
 
@@ -45,19 +44,20 @@
     </section>
 
     <section class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="portfolio-images">
-                <a href="portfolio1.jpg" data-lightbox="portfolio" data-title="Webdesign Projekt">
-                    <img src="portfolio1.jpg" alt="Webdesign Projekt" style="width: 150px; height: 150px;">
-                </a>
-                <a href="portfolio2.jpg" data-lightbox="portfolio" data-title="Marketing Kampagne">
-                    <img src="portfolio2.jpg" alt="Marketing Kampagne" style="width: 150px; height: 150px;">
-                </a>
-                <!-- Ajoutez d'autres éléments de portfolio au besoin -->
-            </div>
+    <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-images">
+            <img src="vanou.jpg" alt="Webdesign Projekt 1" style="width: 150px; height: 150px;">
+            <img src="voyage.jpg" alt="Marketing Kampagne 2" style="width: 150px; height: 150px;">
+            <img src="Tennis.jpg" alt="Projekt 3" style="width: 150px; height: 150px;">
+            <img src="vue.jpg" alt="Projekt 4" style="width: 150px; height: 150px;">
+            <img src="enjoy.jpg" alt="Projekt 5" style="width: 150px; height: 150px;">
+            <img src="logo.jpg" alt="Projekt 6" style="width: 150px; height: 150px;">
+            <img src="love.jpg" alt="Projekt 7" style="width: 150px; height: 150px;">
+            <!-- Fügen Sie bei Bedarf weitere Portfolio-Elemente hinzu -->
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="contact">
         <div class="container">
@@ -71,38 +71,90 @@
     </section>
 
     <section class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <!-- Ajoutez vos compétences et barres de progression ici -->
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill">
+            <h3>Webentwicklung</h3>
+            <div class="progress-bar" style="width: 80%;">80%</div>
         </div>
-    </section>
+        <div class="skill">
+            <h3>Marketing</h3>
+            <div class="progress-bar" style="width: 87%;">87%</div>
+        </div>
+        <!-- Ajoutez d'autres compétences au besoin -->
+    </div>
+</section>
 
-    <section class="extra-section">
-        <div class="container">
-            <h2 class="section-title">Extra Section</h2>
-            <p>Extra Informationen hier...</p>
+<!-- Extra section start -->
+<section class="extra-section spad pb-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2">
+                <div class="section-title">
+                    <h2 style="color: #3E4095;">Extra Skills</h2>
+                </div>
+                <table class="skills-table">
+                    <tr>
+                        <td class="skill-cell">
+                            <h3>Kreativität 🎨</h3>
+                            <p>Ich liebe es, kreative Lösungen zu finden und innovative Ideen umzusetzen.</p>
+                        </td>
+                        <td class="progress-cell">
+                            <div class="circle-progress" style="background-color: #3E4095;">
+                                <div id="progress1" class="prog-circle"></div>
+                                <div class="progress-info">
+                                    <h2 style="color: #fff;">75%</h2>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Ajoutez d'autres compétences supplémentaires au besoin -->
+                </table>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- Extra section end -->
+    <script>
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Fonction pour afficher/masquer une section au clic
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
 
-    <section class="university-section">
-        <div class="container">
-            <h2 class="section-title">University</h2>
-            <p>Studium an der Hochschule Kaiserslautern</p>
-            <p>Website: <a href="https://www.hs-kl.de/" target="_blank">www.hs-kl.de</a></p>
-        </div>
-    </section>
+        // Ajoutez un gestionnaire d'événement à chaque lien de la navigation
+        var navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                var sectionId = link.getAttribute("href").substring(1); // Retire le #
+                toggleSection(sectionId);
+            });
+        });
 
-    <section class="hometown-section">
-        <div class="container">
-            <h2 class="section-title">Hometown</h2>
-            <p>Zweibrücken</p>
-            <p>Website: <a href="https://www.zweibruecken.de/de/" target="_blank">www.zweibruecken.de</a></p>
-        </div>
-    </section>
+        // Affiche/masque la section Extra au clic
+        var extraSection = document.getElementById("extra");
+        extraSection.addEventListener("click", function () {
+            toggleSection("extra-details");
+        });
 
-    <section class="teacher-section">
-        <div class="container">
-            <h2 class="section-title">Professor Hendrik Speck</h2>
-            <p>Professor an der Hochschule Kaiserslautern</p>
-            <p>Web: <a href="http://www.hendrikspeck.com/" target="_blank">www.hendrikspeck.com</a></p>
-        </div>
+        // Affiche/masque les images de la galerie au clic
+        var portfolioImages = document.querySelectorAll(".portfolio-images img");
+        portfolioImages.forEach(function (image) {
+            image.addEventListener("click", function () {
+                var imageId = image.getAttribute("id");
+                toggleSection(imageId + "-details");
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>
