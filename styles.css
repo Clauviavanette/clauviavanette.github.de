@@ -24,6 +24,30 @@
     </style>
 </head>
 <body>
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.skills th, .skills td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
 
     <!-- Header section start -->
     <header>
