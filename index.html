@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ihr Portfolio</title>
+    <title>Votre Portfolio</title>
     <style>
-        /* Ihre benutzerdefinierten Styles hier */
+        /* Deine CSS-Stile hier einfügen */
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -81,11 +81,27 @@
             margin-top: 20px;
         }
 
-        .skills-table th, .skills-table td {
+        .skills-table th,
+        .skills-table td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
         }
+
+        .progress-bar {
+            background-color: #3498db;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .progress-bar-inner {
+            height: 100%;
+        }
+
+        .extra-details {
+            display: none;
+        }
+
     </style>
 </head>
 
@@ -93,36 +109,36 @@
 
     <header>
         <div class="container">
-            <h2><a href="#home">Ihr Name - Portfolio</a></h2>
+            <h2><a href="#home">Votre Nom - Portfolio</a></h2>
             <p>Erfahren Sie mehr über mich</p>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#home">Startseite</a></li>
-            <li><a href="#about">Über mich</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Kontakt</a></li>
-            <li><a href="#skills">Fähigkeiten</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Ausbildung</a></li>
-            <li><a href="#experience">Berufserfahrung</a></li>
-            <li><a href="https://www.hs-kl.de/" target="_blank">Universität</a></li>
-            <li><a href="https://www.zweibruecken.de/de/" target="_blank">Heimatstadt</a></li>
+            <li><a href="#experience">Erfahrung</a></li>
+            <li><a href="https://www.hs-kl.de/" target="_blank">University</a></li>
+            <li><a href="https://www.zweibruecken.de/de/" target="_blank">Hometown</a></li>
             <li><a href="http://www.hendrikspeck.com/" target="_blank">Professor</a></li>
         </ul>
     </nav>
 
     <section id="home" class="section">
         <div class="container">
-            <h2 class="section-title">Startseite</h2>
-            <img src="vanou.jpg" alt="Ihr Foto" class="photo">
+            <h2 class="section-title">Home</h2>
+            <img src="vanou.jpg" alt="Votre Photo" class="photo">
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">Über mich</h2>
+            <h2 class="section-title">About Me</h2>
             <p>
                 Ich bin in Kamerun geboren und wuchs zwischen Kamerun und Frankreich auf. Tennis spiele ich seit ich 8 Jahre alt bin und wurde immer von Webentwicklung und Design fasziniert. Als leidenschaftliche Studentin heiße ich Vanette Kamto. Meine angeborene Neugierde für Technologie hat mich zum Tennis und Digital Media Marketing geführt. Durch mein Studium strebe ich danach, die Feinheiten des digitalen Marketings zu beherrschen und ständig innovative Wege zu finden, um meine Leidenschaft mit moderner Technologie zu verbinden. Auf dem Tennisplatz und in der digitalen Welt versuche ich, meine Kreativität auszudrücken und neue Perspektiven mit entschlossener Intelligenz zu erforschen.
             </p>
@@ -131,15 +147,15 @@
 
     <section id="portfolio" class="section">
         <div class="container">
-            <h2 class="<h2 class="section-title">Portfolio</h2>
+            <h2 class="section-title">Portfolio</h2>
             <div class="portfolio-images">
-                <a href="enjoy.jpg" data-lightbox="portfolio" data-title="Bild: Enjoy">
-                    <img src="enjoy.jpg" alt="Bild: Enjoy" style="width: 150px; height: 150px;">
+                <a href="#enjoy-details" onclick="toggleSection('enjoy-details')">
+                    <img src="enjoy.jpg" alt="Enjoy Bild" style="width: 150px; height: 150px;">
                 </a>
-                <a href="Tennis.jpg" data-lightbox="portfolio" data-title="Bild: Tennis">
-                    <img src="Tennis.jpg" alt="Bild: Tennis" style="width: 150px; height: 150px;">
+                <a href="#tennis-details" onclick="toggleSection('tennis-details')">
+                    <img src="Tennis.jpg" alt="Tennis Bild" style="width: 150px; height: 150px;">
                 </a>
-                <a href="logo.jpg" data-lightbox="portfolio" data-title="logo Bild">
+               <a href="logo.jpg" data-lightbox="portfolio" data-title="logo Bild">
                 <img src="logo.jpg" alt="Logo Bild" style="width: 150px; height: 150px;">
             </a>
             <a href="natur.jpg" data-lightbox="portfolio" data-title="natur Bild">
@@ -155,296 +171,34 @@
                 <img src="love.jpg" alt="Love Bild" style="width: 150px; height: 150px;">
             </a>
 
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Kontakt</h2>
-            <div class="contact-info">
-                <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
-                <strong>Telefon:</strong> +49 1778056395<br>
-                <strong>Ort:</strong> Zweibrücken, Deutschland
             </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Fähigkeiten</h2>
-            <section class="skills">
-                <div class="container">
-                    <!-- Fügen Sie hier Ihre Fähigkeiten hinzu -->
-                    <div class="skill">
-                        <h3>Entwicklung</h3>
-                        <div class="progress-bar" style="width: 80%;">80%</div>
-                    </div>
-                    <div class="skill">
-                        <h3>Marketing</h3>
-                        <div class="progress-bar" style="width: 87%;">87%</div>
-                    </div>
-                    <!-- Fügen Sie hier weitere Fähigkeiten hinzu -->
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <!-- Fügen Sie hier den Abschnitt für die Ausbildung ein -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Ausbildung</h2>
-            <div class="education-item">
-                <h3>Abitur</h3>
-                <p>Studiendauer: 2014, College Fleming</p>
+            <!-- Detailsektionen für jedes Bild -->
+            <div id="enjoy-details" class="extra-details">
+                <h3>Details für Enjoy Bild</h3>
+                <p>Hier kannst du zusätzliche Informationen zum Enjoy Bild hinzufügen.</p>
             </div>
-            <div class="education-item">
-                <h3>Bachelor</h3>
-                <p>Studiendauer: 09.2015 - 08.2018</p>
-                <p>Universität: Sorbonne Universität</p>
+            <div id="tennis-details" class="extra-details">
+                <h3>Details für Tennis Bild</h3>
+                <p>Hier kannst du zusätzliche Informationen zum Tennis Bild hinzufügen.</p>
             </div>
-            <div class="education-item">
-            <h3>Hochschule Kaiserslautern</h3>
-            <p>Studiendauer: 09.2019 - 02.2023</p>
-            <p>Studiengang: Information Management</p>
-        </div>
-
-        <div class="education-item">
-            <h3>Hochschule Kaiserslautern</h3>
-            <p>Studiendauer: 01.03.2023 - heute</p>
-            <p>Studiengang: Digital Media Marketing</p>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Fügen Sie hier den Abschnitt für die Berufserfahrung ein -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Berufserfahrung</h2>
-            <p>
-                <strong>Erfahrungen:</strong><br>
-                <!-- Fügen Sie hier Ihre Berufserfahrungen hinzu -->
-                09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
-                10.2019-09.2021 Mitarbeiterin bei Ikea im Kundenservice in der Logistikabteilung
-            </p>
+            <!-- Füge weitere Detailsektionen hier hinzu -->
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Ihr Name</p>
-    </footer>
+    <!-- Füge weitere Sektionen hier hinzu (Kontakt, Skills, Ausbildung, Erfahrung) -->
 
-</body>
-
-</html><!-- Fügen Sie hier den Abschnitt für die Extra-Skills ein -->
-    <section id="extra" class="section">
-        <div class="container">
-            <h2 class="section-title">Extra-Skills</h2>
-            <table class="skills-table">
-                <tr>
-                    <th>Skill</th>
-                    <th>Fortschritt</th>
-                </tr>
-                <tr>
-                    <td>Kreativität 🎨</td>
-                    <td>
-                        <div class="progress-bar" style="width: 75%;">75%</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Kommunikation 🗣</td>
-                    <td>
-                        <div class="progress-bar" style="width: 83%;">83%</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Teamarbeit 🤝</td>
-                    <td>
-                        <div class="progress-bar" style="width: 90%;">90%</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Analytisches Denken 🧠</td>
-                    <td>
-                        <div class="progress-bar" style="width: 78%;">78%</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Zeitmanagement ⌛</td>
-                    <td>
-                        <div class="progress-bar" style="width: 85%;">85%</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <!-- Hier fügen Sie den JavaScript-Code ein -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Funktion zum Anzeigen/Ausblenden einer Sektion beim Klicken
-            function toggleSection(sectionId) {
-                var section = document.getElementById(sectionId);
-                if (section.style.display === "none" || section.style.display === "") {
-                    section.style.display = "block";
-                } else {
-                    section.style.display = "none";
-                }
+        // Funktion zum Anzeigen/Ausblenden einer Sektion beim Klicken
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
             }
-
-            // Fügen Sie jedem Navigationslink einen Event-Handler hinzu
-            var navLinks = document.querySelectorAll("nav a");
-            navLinks.forEach(function (link) {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    var sectionId = link.getAttribute("href").substring(1);
-                    toggleSection(sectionId);
-                });
-            });
-
-            // Zeige/verberge die Extra-Sektion beim Klicken
-            var extraSection = document.getElementById("extra");
-            extraSection.addEventListener("click", function () {
-                toggleSection("extra-details");
-            });
-
-            // Zeige/verberge die Bilder der Galerie beim Klicken
-            var portfolioImages = document.querySelectorAll(".portfolio-images img");
-            portfolioImages.forEach(function (image) {
-                image.addEventListener("click", function () {
-                    var imageId = image.getAttribute("id");
-                    toggleSection(imageId + "-details");
-                });
-            });
-        });
-    </script>
-
-    <!-- Hier fügen Sie den Lightbox-Code ein (vergessen Sie nicht, die Lightbox-Bibliothek einzubinden) -->
-
-</body>
-
-</html><!-- Fügen Sie hier den Lightbox-Code ein -->
-    <link rel="stylesheet" href="pfad/zur/lightbox.css">
-    <script src="pfad/zur/lightbox.js"></script>
-
-    <!-- Fügen Sie hier den JavaScript-Code für die Lightbox hinzu -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Lightbox-Initialisierung
-            lightbox.option({
-                'resizeDuration': 200,
-                'wrapAround': true
-            });
-        });
+        }
     </script>
 
 </body>
 
-</html><!-- Erfahrungsbereich starten -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Erfahrung</h2>
-            <p>
-                <strong>Experiences:</strong><br>
-                09.2015 - 09.2018: Werkstudent als Strategischer Marketingbeauftragter bei Nike
-            </p>
-            <p>
-                <strong>Experiences:</strong><br>
-                10.2019-09.2021 Mitarbeiterin bei Ikea im Kundenservice in der Logistikabteilung
-            </p>
-            <!-- Fügen Sie bei Bedarf weitere Erfahrungen hinzu -->
-        </div>
-    </section>
-    <!-- Erfahrungsbereich beenden -->
-
-    <!-- Kontaktbereich starten -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Kontakt</h2>
-            <div class="contact-info">
-                <strong>E-Mail:</strong> vanettekamto@gmail.com<br>
-                <strong>Telefon:</strong> +49 1778056395<br>
-                <strong>Ort:</strong> Zweibrücken, Deutschland
-            </div>
-        </div>
-    </section>
-    <!-- Kontaktbereich beenden -->
-
-    <!-- Fähigkeitenbereich starten -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h3>Webentwicklung</h3>
-                    <div class="progress-bar" style="width: 70%;">70%</div>
-                </div>
-                <div class="skill">
-                    <h3>Marketing</h3>
-                    <div class="progress-bar" style="width: 65%;">65%</div>
-                </div>
-                <div class="skill">
-                    <h3>Design</h3>
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-                <!-- Fügen Sie bei Bedarf weitere Fähigkeiten hinzu -->
-            </div>
-        </div>
-    </section>
-    <!-- Fähigkeitenbereich beenden -->
-
-    <!-- Ausbildungsbereich starten -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Ausbildung</h2>
-            <p>Contenu de la section Ausbildung...</p>
-        </div>
-    </section>
-    <!-- Ausbildungsbereich beenden -->
-
-    <!-- JS-Bereich für die Sektionen starten -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            function toggleSection(sectionId) {
-                var section = document.getElementById(sectionId);
-                if (section.style.display === "none" || section.style.display === "") {
-                    section.style.display = "block";
-                } else {
-                    section.style.display = "none";
-                }
-            }
-
-            var navLinks = document.querySelectorAll("nav a");
-            navLinks.forEach(function (link) {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    var sectionId = link.getAttribute("href").substring(1); // Entfernt das #
-                    toggleSection(sectionId);
-                });
-            });
-        });
-    </script>
-    <!-- JS-Bereich für die Sektionen beenden -->
-
-</body>
-
-</html><!-- JS-Bereich für die Sektionen fortsetzen -->
-        <script>
-            // Fortsetzung des vorherigen Scripts
-            var extraSection = document.getElementById("extra");
-            extraSection.addEventListener("click", function () {
-                toggleSection("extra-details");
-            });
-
-            var portfolioImages = document.querySelectorAll(".portfolio-images img");
-            portfolioImages.forEach(function (image) {
-                image.addEventListener("click", function () {
-                    var imageId = image.getAttribute("id");
-                    toggleSection(imageId + "-details");
-                });
-            });
-        </script>
-        <!-- JS-Bereich für die Sektionen fortsetzen -->
-    </body>
-
-    </html>
+</html>
