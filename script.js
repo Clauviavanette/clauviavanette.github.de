@@ -2,24 +2,38 @@
    // script.js
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Navigation functionality
-    const navItems = document.querySelectorAll('.nav-item');
+    // Funktion zum Anzeigen/Ausblenden einer Sektion beim Klicken
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none" || section.style.display === "") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
 
-    navItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const sectionId = this.getAttribute('data-section');
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
+    // Fügen Sie jedem Navigationslink einen Event-Handler hinzu
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            var sectionId = link.getAttribute("href").substring(1); // Entfernt das #
+            toggleSection(sectionId);
         });
     });
 
-    // Toggle visibility of "Lebenslauf" section
-    const lebenslaufSection = document.querySelector('.lebenslauf-section');
-    const toggleButton = document.querySelector('.toggle-lebenslauf');
+    // Zeige/verberge die Extra-Sektion beim Klicken
+    var extraSection = document.getElementById("extra");
+    extraSection.addEventListener("click", function () {
+        toggleSection("extra-details");
+    });
 
-    toggleButton.addEventListener('click', function () {
-        lebenslaufSection.classList.toggle('hidden');
+    // Zeige/verberge die Bilder der Galerie beim Klicken
+    var portfolioImages = document.querySelectorAll(".portfolio-images img");
+    portfolioImages.forEach(function (image) {
+        image.addEventListener("click", function () {
+            var imageId = image.getAttribute("id");
+            toggleSection(imageId + "-details");
+        });
     });
 });
