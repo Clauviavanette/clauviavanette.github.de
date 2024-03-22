@@ -1,242 +1,131 @@
 
     
+
+  
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clauvia Vanette Kamto - Portfolio</title>
+    <title>PKCV - Inspiring Stories and Collections</title>
     <style>
-        /* Dein vorhandener CSS-Code */
-
-        /* Neuer CSS-Code für die Bildgrößenanpassungen */
-        .hero-image img {
-            width: 80%;
-            max-width: 400px;
-            border-radius: 10px;
+        /* Réinitialisation des styles par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .portfolio-images img {
-            width: 180px;
-            height: 180px;
-            margin: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin-bottom: 0;
         }
     </style>
 </head>
+
 <body>
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-box {
-    border: 1px solid #ddd;
-    padding: 20px;
-}
-
-.skills table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.skills th, .skills td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-
-    <!-- Header section start -->
+    <!-- En-tête de la page -->
     <header>
-<!-- Lightbox Init -->
-<script>
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    });
-</script>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="site-logo">
-                        <img src="dein-logo.jpg" alt="Logo" width="50">
-                        <h2><a href="#">Clauvia Vanette Kamto</a></h2>
-                        <p>Enhance your online presence</p>
-                    </div>
-                </div>
-                <div class="col-md-8 text-md-right header-buttons">
-                    <a href="#" class="site-btn">Download CV</a>
-                    <a href="#" class="site-btn">Discover me</a>
-                </div>
-            </div>
-        </div>
+        <h1>Welcome to PKCV</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Header section end -->
-<!-- Extra section start -->
-<section class="extra-section spad pb-0">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-8 offset-xl-2">
-                <div class="section-title">
-                    <h2 style="color: #3E4095;">Extra Skills</h2>
-                </div>
-                <table class="skills-table">
-                    <tr>
-                        <td class="skill-cell">
-                            <h3>Kreativität 🎨</h3>
-                            <p>Ich liebe es, kreative Lösungen zu finden und innovative Ideen umzusetzen.</p>
-                        </td>
-                        <td class="progress-cell">
-                            <div class="circle-progress" style="background-color: #3E4095;">
-                                <div id="progress1" class="prog-circle"></div>
-                                <div class="progress-info">
-                                    <h2 style="color: #fff;">75%</h2>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="skill-cell">
-                            <h3>Kommunikation 🗣</h3>
-                            <p>Ich bin sowohl schriftlich als auch mündlich kommunikationsstark und überzeuge durch klare Botschaften.</p>
-                        </td>
-                        <td class="progress-cell">
-                            <div class="circle-progress" style="background-color: #3E4095;">
-                                <div id="progress2" class="prog-circle"></div>
-                                <div class="progress-info">
-                                    <h2 style="color: #fff;">83%</h2>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- Weitere Fähigkeiten nach Bedarf hinzufügen -->
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Extra section end -->
 
-<style>
-    .skills-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-
-    .skill-cell, .progress-cell {
-        padding: 20px;
-        border: 1px solid #ddd;
-    }
-
-    .circle-progress {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .prog-circle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #fff; /* Hintergrundfarbe des Fortschrittskreises */
-        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .progress-info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .progress-info h2 {
-        margin: 0;
-        font-size: 1.5em;
-    }
-</style>
-
-    <!-- Hero section start -->
-    <section class="hero-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero-text">
-                                <h2>Clauvia Vanette Kamto</h2>
-                                <p>Enhance your online presence</p>
-                            </div>
-                            <div class="hero-info">
-                                <h2>General Info</h2>
-                                <ul>
-                                    <li><span>Date of Birth</span>Aug 25, 1988</li>
-                                    <li><span>Address</span>Virginiastr 17, 66482 Zweibrücken</li>
-                                    <li><span>Email</span>vanettekamto@gmail.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <figure class="hero-image">
-                                <img src="dein-erstes-bild.jpg" alt="Erstes Bild">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Section À Propos -->
+    <section id="about">
+        <h2>About PKCV</h2>
+        <p>Share some inspiring information about your brand PKCV, its history, mission, and values.</p>
     </section>
-    <!-- Hero section end -->
 
-    <!-- Portfolio section start -->
-    <section class="portfolio">
-<div class="container">
-        <h2 class="section-title">Portfolio</h2>
-        <div class="portfolio-images">
-            <a href="enjoy.jpg" data-lightbox="portfolio" data-title="Enjoy Bild">
-                <img src="enjoy.jpg" alt="Enjoy Bild" style="width: 150px; height: 150px;">
-            </a>
-            <a href="tennis.jpg" data-lightbox="portfolio" data-title="Tennis Bild">
-                <img src="tennis.jpg" alt="Tennis Bild" style="width: 150px; height: 150px;">
-            </a>
-            <!-- Füge die gleichen Datenattribute für die anderen Bilder hinzu -->
-        </div>
-    </div>
-</section>
-
-        <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="portfolio-images">
-                <img src="enjoy.jpg" alt="Enjoy Bild">
-                <img src="tennis.jpg" alt="Tennis Bild">
-                <img src="natur.jpg" alt="Natur Bild">
-                <img src="vue.jpg" alt="Vue Bild">
-                <img src="voyage.jpg" alt="Voyage Bild">
-                <img src="love.jpg" alt="Love Bild">
-            </div>
-        </div>
+    <!-- Section Portfolio (Collections) -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Discover our latest collections of hoodies and t-shirts.</p>
+        <!-- Ajoutez des images et des descriptions de vos produits ici -->
     </section>
-    <!-- Portfolio section end -->
 
-    <!-- ... (dein vorhandener HTML-Code) ... -->
+    <!-- Section Histoires Inspirantes -->
+    <section id="stories">
+        <h2>Inspiring Stories</h2>
+        <p>Share inspiring stories that captivate and motivate your visitors.</p>
+    </section>
 
-    <!-- Footer section start -->
-    <footer class="footer-section">
-        <div class="container text-center">
-            <div class="copyright">
-                <!-- Link zurück zu Colorlib kann nicht entfernt werden. Das Template steht unter der CC BY 3.0 Lizenz. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Alle Rechte vorbehalten | Erstellt mit <i class="fa fa-heart-o" aria-hidden="true"></i> von <a href="https://colorlib.com" target="_blank">Colorlib</a> und verbreitet von <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                <!-- Link zurück zu Colorlib kann nicht entfernt werden. Das Template steht unter der CC BY 3.0 Lizenz. -->
-            </div>
-        </div>
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or comments, feel free to contact us.</p>
+        <!-- Ajoutez un formulaire de contact ici -->
+    </section>
+
+    <!-- Pied de page de la page -->
+    <footer>
+        <p>&copy; 2024 PKCV. All rights reserved.</p>
     </footer>
-    <!-- Footer section end -->
-
 </body>
+
 </html>
