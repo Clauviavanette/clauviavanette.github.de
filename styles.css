@@ -2,82 +2,60 @@
     
 
   
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PKCV - Inspiring Stories & Apparel</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#true-stories">Inspiring Stories</a></li>
-                <li><a href="#business-section">Business Section</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="https://www.hs-kl.de/" target="_blank">University</a></li>
-                <li><a href="https://www.zweibruecken.de/de/" target="_blank">Hometown</a></li>
-                <li><a href="http://www.hendrikspeck.com/" target="_blank">Professor</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="container">
-            <div class="hero-section">
-                <div class="hero-text">
-                    <h2>PKCV - Inspiring Stories & Apparel</h2>
-                    <p>Welcome to PKCV, where inspiring stories meet stylish apparel.</p>
-                </div>
-                <div class="hero-info">
-                    <h2>General Info</h2>
-                    <ul>
-                        <li><span>Date of Birth:</span> October 02, 1996</li>
-                        <li><span>Address:</span> Virginiastr 17, 66482 Zweibrücken</li>
-                        <li><span>Email:</span> vanettekamto@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="hero-image">
-                    <img src="vanou.jpg" alt="Vanou Image">
-                </div>
-            </div>
-        </div>
-    </section>
+ /* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I was born in Cameroon and raised between Cameroon and France. I have been playing tennis since I was 8 years old and have always been fascinated by web development and design. As a passionate student, my inherent curiosity for technology has led me to tennis and digital media marketing. Through my studies, I strive to master the intricacies of digital marketing and constantly find innovative ways to integrate my passion with modern technology. On the tennis court and in the digital world, I endeavor to express my creativity and explore new perspectives with determined intelligence.</p>
-        </div>
-    </section>
+/* Styles de la bannière */
+.banner {
+    background-color: #FF0000; /* Rouge */
+    color: #FFFFFF; /* Blanc */
+    padding: 20px;
+    text-align: center;
+}
 
-    <section id="true-stories">
-        <div class="container">
-            <h2>Inspiring Stories</h2>
-            <!-- Add inspiring stories content here -->
-        </div>
-    </section>
+/* Styles du menu de navigation */
+nav {
+    background-color: #333333; /* Noir */
+    padding: 10px 0;
+    text-align: center;
+}
 
-    <section id="business-section">
-        <div class="container">
-            <h2>Business Section</h2>
-            <!-- Add business section content here -->
-        </div>
-    </section>
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Add other sections as needed -->
+nav ul li {
+    display: inline;
+}
 
-    <footer>
-        <p>&copy; 2024 PKCV. All rights reserved.</p>
-    </footer>
+nav ul li a {
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+    padding: 10px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+nav ul li a:hover {
+    background-color: #555555; /* Gris foncé */
+}
+
+/* Styles des sections de contenu */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Styles spécifiques pour chaque section (ajoutez selon vos besoins) */
+#histoires-vraies {
+    background-color: #FFFFFF; /* Blanc */
+}
+
+#section-business {
+    background-color: #EEEEEE; /* Gris clair */
+}
