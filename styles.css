@@ -60,3 +60,9 @@ section {
     font-size: 2em;
     margin-bottom: 20px;
 }
+.banner img {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-right: 10px; /* Espacement entre le logo et le texte */
+    vertical-align: middle; /* Centre le logo verticalement */
+}
